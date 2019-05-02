@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agent Activation Chatbot Maintenance Tool</title>
+    <!-- Global stylesheets -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!--<script language="JavaScript" type="text/javascript" src="js/jquery.js"></script>-->
+    <script language="JavaScript" type="text/javascript" src="app.js"></script>
+    <script language='JavaScript' type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <!-- Core JS files -->
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+        <script>
+            function Authontication(){
+               var formData = {
+                  'username': document.getElementById('username').value,
+                  'password': document.getElementById('password').value
+                };
+                $.ajax({
+                  type: "GET",
+                  url: "https://agentmaintenancetool.azurewebsites.net/login",
+                  data: formData,
+                  dataType: 'json',
+                  contentType: 'application/json',
+                  async : false,
+                  timeout: 60000,
+                  success: function (res) {
+                      var EditMultimediaAddFile = document.getElementById("login");
+                      if(res.data!="" && res.data!=undefined){
+                         event.preventDefault();
+                         EditMultimediaAddFile.action = "http://agentmaintenancetool.azurewebsites.net/Home.html";
+                         //alert("Welcome..!!" + formData.username);
+                      }else{
+                          alert('Authantication UnSuccesful..!!');
+                         EditMultimediaAddFile.action = "http://agentmaintenancetool.azurewebsites.net";
+                      }
+                    }, 
+                  error: function (err) {
+                    console.log(err);
+                    alert("Unable to save. Please check the inputs and retry" + formData.intent);
+                    window.location.href = 'http://agentmaintenancetool.azurewebsites.net/index.html';
+                  }
+              });
+            } 
+            </script>
+        <script>
+        function validateaddlinkform(){
+            var username= document.forms["login"]["username"].value;
+            var password= document.forms["login"]["password"].value;
+             if (username=="" ) //|| linkadd=="")
+             {
+                 alert('Please Input The Required Fields');
+                 document.forms["login"]["username"].style.borderColor = "red";
+                 return false;
+             }
+             else
+                document.forms["login"]["username"].style.borderColor = "black";
+             if (password=="" ) //|| linkadd=="")
+             {
+                 alert('Please Input The Required Fields');
+                 document.forms["login"]["password"].style.borderColor = "red";
+                 return false;
+             }
+             else{
+                document.forms["login"]["password"].style.borderColor = "black";
+             }
+                       
+        }
+        </script>
+    
+</head>
+
+<body class="bg-white">
+    <!-- Main navbar -->
+    <div class="navbar bg-blue">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="" height="80" width="80"></a>
+        <div class="navbar-header">
+            <h3 class="logo-container">Agent Activation Chatbot Maintenance Tool </h3>
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+        <ul class="nav navbar-nav navbar-right">
+            <li class="logo-container" style="padding-right:60px">ENVIRONMENT: DEV</li> 
+         </ul>
+        </div>
+    </div>
+    <!-- Main navbar -->
+    <!-- container -->
+    <div class="container text-center">
+            <form name="login" class="form-horizontal align-form-content" action="Home.html" onsubmit ="return validateaddlinkform()" method="get" id="login">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">User Name<font color="red">*</font></label>
+                        <div class="col-sm-10">
+                            <input id="username" type="text" name="username" class="form-control width-xs border-blue" placeholder="User Name">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                                <label class="col-sm-2 control-label">Password<font color="red">*</font></label>
+                                <div class="col-sm-10">
+                                    <!--<button type="file" class="btn btn-default pull-right btn-m-r-xl  border-blue  bg-white">Choose</button>-->
+                                    <input id="password" type="password" name="password" class="form-control width-xs  border-blue" placeholder="Password">              
+                                </div>
+                            </div>
+                    <div class="form-group ml-xlg">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <button type="submit" class="btn btn-default border-blue  bg-white" id="login" onclick="Authontication()">Log In</button>
+                                <input type="button" class="btn btn-default border-blue  bg-white" value="Cancel" onclick="location.href ='http://agentmaintenancetool.azurewebsites.net'"/>
+                            </div>
+                        </div>
+                </form>
+    </div>
+    <!-- container -->
+</body>
+
+</html>
