@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agent Activation Chatbot Maintenance Tool</title>
+
+    <!-- Global stylesheets -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+<script language="JavaScript" type="text/javascript" src="app.js"></script>
+    <!-- Core JS files -->
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+<script>
+  function validate_fileupload(fileName)
+    {
+        
+                var fileUpload = document.getElementById("uploadExcel").files[0];
+                var reader = new FileReader();
+                reader.readAsText(fileUpload);
+                 reader.onload = loadHandler;
+                
+                   
+
+                      
+            
+                
+                localStorage.setItem('uploadExcel',"Utterence Template Has Been Uploaded");
+             
+            
+         
+        //document.querySelector('#uploadExcel').value = null;
+        var UploadExcel = document.getElementById("UploadExcel");
+        UploadExcel.action = "http://agentmaintenancetoolprod.azurewebsites.net/AddUtterance1.html";        
+        if(document.querySelector('#uploadExcel').value != ""){
+            alert("Upload csv File");
+        }
+        document.querySelector('#uploadExcel').value = null;        
+        return false;
+    }
+    function loadHandler(event){
+             var csv = event.target.result;
+                   processData(csv);
+             //alert("hii");
+         }
+         function processData(csv) {
+        var allTextLines = csv.split(/\r\n|\n/);
+        var lines = [];
+        for (var i=0; i<allTextLines.length; i++) {
+            var data = allTextLines[i].split(';');
+                var tarr = [];
+                for (var j=0; j<data.length; j++) {
+                    if (data[0]=='')
+                    {
+                        alert("empty");
+                    }
+                    tarr.push(data[j]);
+                }
+                lines.push(tarr);
+        }
+        if (lines[0]=='')
+        {
+            alert("hooooo");
+        }
+      console.log(lines);
+      alert(lines);
+    }
+
+    </script>
+    <script>
+     function goBack(){
+         localStorage.setItem('cancelReload',"cancelReload");
+         window.history.back();         
+     }
+     </script>
+     
+</head>
+
+<body class="bg-white">
+    <!-- Main navbar -->
+    <div class="navbar bg-blue">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="" height="80" width="80"></a>
+        <div class="navbar-header">
+            <h3 class="logo-container">Agent Activation Chatbot Maintenance Tool </h3>
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+        <ul class="nav navbar-nav navbar-right">
+            <li class="logo-container" style="padding-right:60px">ENVIRONMENT: DEV</li> 
+         </ul>
+        </div>
+    </div>
+    <!-- Main navbar -->
+    <!-- container -->
+    <div class="container text-center">
+        <form class="form-horizontal  align-form-content" action="AddIntent.html" method="get" id="UploadExcel" onsubmit ="return validate_fileupload()">
+            <div class="form-group">
+                <p class="text-ey-red text-left mb-25">*Please note that new utterance needs to be added in a specific format. <a href="http://agentmaintenancetool.azurewebsites.net/storageluis/UploadTemplate.csv">Click here</a> to download the template to add utterances and upload
+                    </p>
+                <label class="col-sm-2 control-label">Utterance</label>
+                <div class="col-sm-10">
+                    <input type="file" class="btn btn-default border-blue  bg-white pull-left" name="uploadExcel" id="uploadExcel" class="form-control width-xs  border-blue" placeholder="Attach file" onchange="validate_fileupload(this.value)">
+                    </div>  
+                   <!-- <div class="col-sm-6">
+                    <button type="submit" class="btn btn-default border-blue  bg-white pull-left">choose</button>
+                </div>-->
+            </div>
+
+                  
+            <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-11">
+                          <button type="submit" class="btn btn-default border-blue  bg-white" id="uploadexc">Save</button>
+                        <!-- <input type="button" class="btn btn-default border-blue  bg-white" value="Cancel" onclick="location.href ='http://agentmaintenancetool.azurewebsites.net/AddIntent.html'" />-->
+                         <input type="button" class="btn btn-default border-blue  bg-white" value="Cancel" onclick="goBack()" />
+                    </div>
+                </div>
+        </form>
+    </div>
+    <!-- container -->
+</body>
+
+</html>

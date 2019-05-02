@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agent Activation Chatbot Maintenance Toolt</title>
+    <!-- Global stylesheets -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!--<script language="JavaScript" type="text/javascript" src="js/jquery.js"></script>-->
+    <script language="JavaScript" type="text/javascript" src="app.js"></script>
+    <script language='JavaScript' type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <!-- Core JS files -->
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+     <script>
+        function validateaddlinkform(){
+            var linkname= document.forms["addlink"]["link"].value;
+            var linkadd= document.forms["addlink"]["linktag"].value;
+             if (linkname=="" ) //|| linkadd=="")
+             {
+                 alert('Please Input The Required Fields');
+                 document.forms["addlink"]["link"].style.borderColor = "red";
+                 return false;
+             }
+             else
+                document.forms["addlink"]["link"].style.borderColor = "black";
+                if (linkadd=="" ) //|| linkadd=="")
+             {
+                 alert('Please Input The Required Fields');
+                 document.forms["addlink"]["linktag"].style.borderColor = "red";
+                 return false;
+             }
+             else{
+                document.forms["addlink"]["link"].style.borderColor = "black";
+             }
+            var linkss = document.getElementById("link").value;
+            localStorage.setItem('link',linkss);
+            var linktagss = document.getElementById("linktag").value;
+            localStorage.setItem('linktag',linktagss);
+           
+        }
+        </script>
+    
+</head>
+
+<body class="bg-white">
+    <!-- Main navbar -->
+    <div class="navbar bg-blue">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="" height="80" width="80"></a>
+        <div class="navbar-header">
+            <h3 class="logo-container">Agent Activation Chatbot Maintenance Tool </h3>
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+        <ul class="nav navbar-nav navbar-right">
+            <li class="logo-container" style="padding-right:60px">ENVIRONMENT: DEV</li> 
+         </ul>
+        </div>
+    </div>
+    <!-- Main navbar -->
+    <!-- container -->
+    <div class="container text-center">
+            <form class="form-horizontal  align-form-content" action="EditPolicy.html" onsubmit ="return validateaddlinkform()" method="get" id="AddMultimediaFile" >
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Link Name</label>
+                        <div class="col-sm-10">
+                            <input id="link" type="textarea" name="link" class="form-control width-xs border-blue" placeholder="Link">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                                <label class="col-sm-2 control-label">Link Address</label>
+                                <div class="col-sm-10">
+                                    <!--<button type="file" class="btn btn-default pull-right btn-m-r-xl  border-blue  bg-white">Choose</button>-->
+                                    <input id="linktag" type="text" name="linktag" class="form-control width-xs  border-blue" placeholder="">              
+                                </div>
+                            </div>
+                    <div class="form-group ml-xlg">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <button type="submit" onclick="setLocalVeriable()" class="btn btn-default border-blue  bg-white" id="upload">Save</button>
+                                <input type="button" class="btn btn-default border-blue  bg-white" value="Cancel" onclick="location.href ='http://agentmaintenancetool.azurewebsites.net/EditPolicy.html'" />
+                            </div>
+                        </div>
+                </form>
+    </div>
+    <!-- container -->
+</body>
+
+</html>

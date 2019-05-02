@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agent Activation Chatbot Maintenance Tool</title>
+
+    <!-- Global stylesheets
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css"> -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <script language="JavaScript" type="text/javascript" src="app.js"></script>
+    <!-- Core JS files -->
+    <script language='JavaScript' type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script>
+          function loadIntentDetails(){
+          document.getElementById('EditPolicy').style.display='none';
+          var getIntents = document.getElementById('getIntents');
+          /*if(localStorage.getItem('intent')!=null){
+              document.getElementById("getIntents").value = localStorage.getItem('intent');
+              actionselection();
+          }else{*/
+          if(localStorage.getItem("originalIntent")==null){
+                var urlParams = window.location.href;
+                var list = urlParams.split("?")[1];            
+                 if(list === undefined){
+                    getIntents.value = localStorage.getItem("intent");                  
+                 }else{
+                  getIntents.value = list.split("=")[1].split('&')[0]; 
+                 }    
+            }else{
+               getIntents.value = localStorage.getItem("originalIntent")
+            } 
+            autoFit(document.getElementById('getIntents'),7);                    
+            var intent = getIntents.value;
+            var formData = {
+              'intent': getIntents.value
+            };
+            $.ajax({
+              type: "GET",
+              url: "http://agentmaintenancetool.azurewebsites.net/selectDataValidate",
+              data: formData,
+              dataType: 'json',
+              contentType: 'application/json',
+              success: function (res) {
+                var list_Objects = jQuery.unique(res.data); 
+                console.log("count of the entity in intent : "+list_Objects.length);  
+                if(list_Objects.length==1){ 
+                    var formData1 = {
+                    'entity': "NA",
+                    'intent': getIntents.value
+                     };
+                  $.ajax({
+                  type: "GET",
+                  url: "http://agentmaintenancetool.azurewebsites.net/selectDataResponse",
+                  data: formData1,
+                  dataType: 'json',
+                  contentType: 'application/json',
+                  success: function (res) {
+                      document.getElementById('EditPolicy').style.display='block';
+                      var list_Objects = JSON.parse(res.data);
+                            localStorage.setItem('originalIntent',getIntents.value);
+                            console.log(list_Objects);
+                            var tempAnswer = "";
+                            if(list_Objects.answer){
+                                    tempAnswer = decodeHTMLEntities(list_Objects.answer);
+                                    $("#answer").val(tempAnswer);
+                                }else if(list_Objects.answerarray){
+                                    tempAnswer = decodeHTMLEntities(list_Objects.answerarray);
+                                $("#answer").val(tempAnswer);
+                               }     
+                        var selectedValue = list_Objects.responsetag;
+                        if(selectedValue == "Text"){
+                          document.getElementById('Link').style.display='none';  
+                          document.getElementById('Media').style.display='none';
+                          document.getElementById('radioMedia').style.display='none';
+                          document.getElementById('radioLink').style.display='none';
+                          document.getElementById("selectResponseText").checked=true;
+                         // document.getElementById('answertag').value='answer,linkarray,iconarray,entity_type,descarray';
+                          document.getElementById('selectResponse').value= 'Text';    
+                        }else if(selectedValue == "Hyperlink"){
+                            document.getElementById('Media').style.display='none';
+                            document.getElementById('Link').style.display='block'; 
+                            document.getElementById("selectResponseLink").checked=true;
+                            document.getElementById('radioMedia').style.display='none';
+                            document.getElementById('radioText').style.display='none';
+                            document.getElementById('selectResponse').value= 'Hyperlink';
+                            var linktaglist=list_Objects.linktag;  					
+        					//$.each(linktaglist, function (key, value) {
+                               var linktag = linktaglist;   
+                             if(localStorage.getItem("link")!=null){
+                                document.getElementById('link').value= localStorage.getItem("link");
+                                document.getElementById('linktag').value= localStorage.getItem("linktag"); 
+                                linktag = document.getElementById('linktag').value;
+                             }
+                            var listHTML1 = "<table border='0'>";                                              
+        					  listHTML1 += '<a href="EditLink.html?intent='+intent+'?linktag='+linktag+'" onclick="EditLink.html?intent='+intent+'?linktag='+linktag+'" class="text-black"> <button type="button" class="btn btn-default bg-white btn-width-xlg mb-10 border-blue pull-left"><span class="glyphicon glyphicon-pencil pr-10"></span>'+ linktag +'</button></a>';
+        			        // });
+        					listHTML1 += "</table>";
+        					document.getElementById('linkTagList').innerHTML= listHTML1;             
+                        }else if(selectedValue == "MultimediaResponse"){
+                            document.getElementById('Link').style.display='none';
+                            document.getElementById('Media').style.display='block'; 
+                            document.getElementById("selectResponseMedia").checked=true; 
+                            document.getElementById('radioLink').style.display='none';
+                            document.getElementById('radioText').style.display='none';                           
+                            if(localStorage.getItem("newdescarray")!=null && localStorage.getItem("newlinkarray")!=null && localStorage.getItem("newiconarray")!=null){
+                            if(localStorage.getItem('uploadExcel')==null && localStorage.getItem('cancelReload')==null){  
+                                var linkarray = localStorage.getItem('newlinkarray');
+                                var descarray = localStorage.getItem('newdescarray');
+                                var iconarray = localStorage.getItem('newiconarray');                 
+                               if(document.getElementById("descarray").value=="" && localStorage.getItem("multidescarray")==null){
+                                    //document.getElementById("newdescarray").value = descarray;
+                                    list_Objects.descarray.push(descarray);  
+                                        if(descarray!=null){
+                                            localStorage.setItem('multidescarray',descarray);
+                                            }
+                                   }else {                                       
+                                       descarray = localStorage.getItem('multidescarray') +","+descarray;
+                                       descarray = descarray.split(",");
+                                       $.each(descarray, function (index, value) {
+                                        list_Objects.descarray.push(value);
+                                       });
+                                       localStorage.setItem('multidescarray',descarray);
+                                   }
+                                if(document.getElementById("iconarray").value=="" && localStorage.getItem("multiiconarray")==null){
+                                   //document.getElementById("iconarray").value=iconarray;
+                                   list_Objects.iconarray.push(iconarray); 
+                                     if(iconarray!=null){
+                                        localStorage.setItem('multiiconarray',iconarray); 
+                                     }
+                                   }else{
+                                      iconarray = localStorage.getItem('multiiconarray') +","+iconarray;
+                                      iconarray = iconarray.split(",");
+                                       $.each(iconarray, function (index, value) {
+                                        list_Objects.iconarray.push(value);
+                                       });                            
+                                      localStorage.setItem('multiiconarray',iconarray);
+                                   }
+                                if(document.getElementById("linkarray").value=="" && localStorage.getItem("multilinkarray")==null){
+                                     //document.getElementById("linkarray").value=linkarray;
+                                     list_Objects.linkarray.push(linkarray);
+                                     if(linkarray!=null){
+                                            localStorage.setItem('multilinkarray',linkarray); 
+                                         }                  
+                                   }else{
+                                       linkarray = localStorage.getItem('multilinkarray') +","+linkarray;
+                                       linkarray = linkarray.split(",");
+                                       $.each(linkarray, function (index, value) {
+                                        list_Objects.linkarray.push(value);
+                                       });                                                   
+                                       localStorage.setItem('multilinkarray',linkarray); 
+                                   }
+                               }else {
+                                    //list_Objects.iconarray.push(localStorage.getItem("multiiconarray"));
+                                    iconarray = localStorage.getItem('multiiconarray').split(",");
+                                    $.each(iconarray, function (index, value) {
+                                        list_Objects.iconarray.push(value);
+                                       });
+                                    //list_Objects.linkarray.push(localStorage.getItem("multilinkarray"));
+                                    linkarray = localStorage.getItem('multilinkarray').split(",");
+                                    $.each(linkarray, function (index, value) {
+                                        list_Objects.linkarray.push(value);
+                                       }); 
+                                    descarray = localStorage.getItem('multidescarray').split(",");  
+                                    $.each(descarray, function (index, value) {
+                                        list_Objects.descarray.push(value);
+                                       }); 
+                                    //list_Objects.descarray.push(localStorage.getItem("multidescarray")); 
+                                    /*document.getElementById("descarray").value = localStorage.getItem('multidescarray');
+                                    document.getElementById("iconarray").value = localStorage.getItem("multiiconarray");
+                                    document.getElementById("linkarray").value = localStorage.getItem("multilinkarray");*/
+                             }
+                            }else{
+                                document.getElementById('iconarray').value=list_Objects.iconarray;
+                                document.getElementById('linkarray').value=list_Objects.linkarray;
+                            }
+                            document.getElementById('answertag').value='answer,linkarray,iconarray,entity_type,descarray';
+                            document.getElementById('selectResponse').value= 'MultimediaResponse';                                   
+                            var listHTML2 = "<table border='1'>";
+                            var iconarraylist=list_Objects.iconarray; 
+                            var linkarraylist=list_Objects.linkarray; 
+                            var descarraylist=list_Objects.descarray;  	
+                            if(Array.isArray(descarraylist)){				
+        					$.each(descarraylist, function (index, value) {
+                               //var descarray = value; 
+                               if(localStorage.getItem("editdescarray")!=null){
+                                   var indextemp = localStorage.getItem("index"); 
+                                   if(index==indextemp){
+                                   value = localStorage.getItem("editdescarray");
+                                   descarraylist[index]=value;
+                                   }
+                               } 
+                               var i = index;                   
+        					  listHTML2 += '<a href="EditUtterance.html?intent='+intent+'?index='+i+'" onclick="EditUtterance.html?intent='+intent+'?index='+i+'" class="text-black"> <button type="button" class="btn btn-default bg-white btn-width-xlg mb-10 border-blue pull-left"><span class="glyphicon glyphicon-pencil pr-10"></span>'+ value +'</button></a>';
+                              //list_Objects.descarray = descarraylist;   
+        			         });
+                             }else{
+                               var i = 0;  
+                               if(localStorage.getItem("editdescarray")!=null){
+                                   descarraylist = localStorage.getItem("editdescarray");
+                               } 
+                                listHTML2 += '<a href="EditUtterance.html?intent='+intent+'?index='+i+'" onclick="EditUtterance.html?intent='+intent+'?index='+i+'" class="text-black"> <button type="button" class="btn btn-default bg-white btn-width-xlg mb-10 border-blue pull-left"><span class="glyphicon glyphicon-pencil pr-10"></span>'+ descarraylist +'</button></a>'; 
+                             }
+                            document.getElementById('descarray').value=descarraylist;
+                            document.getElementById('iconarray').value=iconarraylist;
+                            document.getElementById('linkarray').value=linkarraylist;
+        					listHTML2 += "</table>";
+        					//alert("List HTML: " + listHTML);
+        					document.getElementById('descarrayLists').innerHTML= listHTML2;                     
+                        }
+                        },
+                  error: function () {
+                    alert("Unable to Fetch Response based on Entity and Intent try again..!! ");
+                    window.location.href = 'http://agentmaintenancetool.azurewebsites.net/EditPolicy.html';
+                  }
+                });
+               }else {  
+                  alert("This intent contains entities. Please contact IT to make changes to it.");
+                  window.location.href = 'http://agentmaintenancetool.azurewebsites.net/Home.html';
+                  //return 0;
+               }       
+              },
+              error: function () {
+                console.log(res.data);
+                alert("Unable to Fetch Response based on Entity and Intent try again..!! ");
+                window.location.href= 'http://agentmaintenancetool.azurewebsites.net/EditPolicy.html';
+              }
+            });
+          //}
+         };
+         window.onload = loadIntentDetails;
+         
+    </script>
+    <script>
+         function decodeHTMLEntities(text) {           
+            var entities = [
+                ['amp', '&'],
+                ['apos', '\''],
+                ['#x27', '\''],
+                ['#x2F', '/'],
+                ['#39', '\''],
+                ['#47', '/'],
+                ['lt', '<'],
+                ['gt', '>'],
+                ['nbsp', ' '],
+                ['quot', '"']
+            ];
+        if( Array.isArray(text)){
+            for (var j=0; j<text.length; j++){
+            for (var i = 0, max = entities.length; i < max; ++i) 
+                text[j] = text[j].replace(new RegExp('&'+entities[i][0]+';', 'g'), entities[i][1]);
+            }
+        }else{
+            for (var i = 0, max = entities.length; i < max; ++i) 
+                text = text.replace(new RegExp('&'+entities[i][0]+';', 'g'), entities[i][1]);
+        }
+            return text;
+        } 
+</script>
+  <!--<script>
+    function getParams(){
+    var idx = document.URL.indexOf('?');
+    var params = new Array();
+    if (idx != -1) {
+    var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+    for (var i=0; i<pairs.length; i++){
+    nameVal = pairs[i].split('=');
+    params[nameVal[0]] = nameVal[1];
+    }
+    }
+    return params;
+    };
+   function fetchDetails(){
+    params = getParams();
+   var descarray = unescape(params["descarray"]);
+   var iconarray = unescape(params["iconarray"]);
+   var linkarray = unescape(params["uploadFile"]);
+   var link = unescape(params["link"]);
+   var linktag = unescape(params["linktag"]);
+   if(descarray!="" && descarray!="undefined"){
+   linkarray = "https://agentactivationbotdev.blob.core.windows.net/faqstorage/"+linkarray;
+   if(document.getElementById("descarray").value==""){
+     document.getElementById("descarray").value=descarray;  
+   }else{
+       document.getElementById("descarray").value = document.getElementById("descarray").value +","+descarray;
+   }
+    if(document.getElementById("iconarray").value==""){
+     document.getElementById("iconarray").value=iconarray;  
+   }else{
+      document.getElementById("iconarray").value = document.getElementById("iconarray").value +","+iconarray;
+   }
+    if(document.getElementById("linkarray").value==""){
+     document.getElementById("linkarray").value=linkarray;  
+   }else{
+       document.getElementById("linkarray").value = document.getElementById("linkarray").value +","+linkarray;
+   }
+   }else{
+        if(document.getElementById("link").value==""){
+         document.getElementById("link").value=link;  
+       }else{
+         document.getElementById("link").value = document.getElementById("link").value +","+link;
+       }
+        if(document.getElementById("linktag").value==""){
+         document.getElementById("linktag").value=linktag;  
+       }else{
+          document.getElementById("linktag").value = document.getElementById("linktag").value +","+linktag;
+       }
+   }
+  };
+   // window.=fetchDetails;
+</script> -->
+<script>
+   function actionselection() {
+    var selectResponse = document.getElementById('selectResponse');
+    var selectedValueText = document.getElementById("selectResponseText");
+    var selectedValueLink = document.getElementById("selectResponseLink");
+    var selectedValueMedia = document.getElementById("selectResponseMedia");
+    var answertag = document.getElementById('answertag');
+    var intent = document.getElementById("getIntents").value;
+    var answer = document.getElementById('answer');    
+    localStorage.setItem('intent',intent);
+    //localStorage.setItem('answer',answer.value);
+    
+    if(selectedValueText.checked==true){
+      document.getElementById('Link').style.display='none';  
+      document.getElementById('Media').style.display='none'; 
+      answertag.value = 'answer,entity_types';
+      selectResponse.value='Text';  
+      localStorage.setItem('intentType','Text'); 
+    }else if(selectedValueLink.checked==true){
+        document.getElementById('Media').style.display='none';
+        document.getElementById('Link').style.display='block'; 
+        document.getElementById('linkTagList').style.display='none';
+        answertag.value = 'answer,link,linktag,entity_type'; 
+        selectResponse.value='Hyperlink';
+        localStorage.setItem('intentType','Hyperlink');  
+        //fetchDetails();         
+    }else if(selectedValueMedia.checked==true){
+        document.getElementById('Link').style.display='none';
+        document.getElementById('Media').style.display='block';
+        document.getElementById('linkTagList').style.display='none';
+        answertag.value = 'answer,linkarray,iconarray,entity_type,descarray';
+        selectResponse.value='MultimediaResponse';  
+        localStorage.setItem('intentType','MultimediaResponse'); 
+        //fetchDetails();  
+    }else{
+        if(localStorage.getItem('intentType')==null){
+        selectedValueText.checked=true;
+        document.getElementById('Link').style.display='none';  
+        document.getElementById('Media').style.display='none';
+        answertag.value = 'answer,entity_types';
+        selectResponse.value='Text';
+        //localStorage.setItem('intentType','Text');
+        }
+    }   
+    if(localStorage.getItem('uploadExcel')!=null){
+           document.getElementById('Utterence').innerText=localStorage.getItem('uploadExcel');
+    }
+    if(localStorage.getItem('intent')!=null){
+            intent.value=localStorage.getItem('intent');
+    }if(localStorage.getItem('intentType')!=null){        
+            selectResponse.value=localStorage.getItem('intentType');
+            if(selectResponse.value=="Text"){
+                selectedValueText.checked=true;                
+                document.getElementById('Link').style.display='none';
+                document.getElementById('Media').style.display='none';               
+            }else if(selectResponse.value=="Hyperlink"){
+                selectedValueLink.checked=true;
+                document.getElementById('Link').style.display='block';
+                document.getElementById('Media').style.display='none'; 
+              var linkvalue = localStorage.getItem('link');
+              var linktagvalue = localStorage.getItem('linktag');
+              if(document.getElementById("link").value==""){
+                 document.getElementById("link").value=linkvalue;  
+               }else{
+                 document.getElementById("link").value = document.getElementById("link").value +","+linkvalue;
+               }
+                if(document.getElementById("linktag").value==""){
+                 document.getElementById("linktag").value=linktagvalue;  
+               }else{
+                  document.getElementById("linktag").value = document.getElementById("linktag").value +","+linktagvalue;
+               }
+               //fetchDetails();
+            }else if(selectResponse.value=="MultimediaResponse"){
+                selectedValueMedia.checked=true;
+                document.getElementById('Media').style.display='block';
+                document.getElementById('Link').style.display='none';                 
+                var linkarray = localStorage.getItem('linkarray');
+                var descarray = localStorage.getItem('descarray');
+                var iconarray = localStorage.getItem('iconarray');
+                //linkarray = "https://agentactivationbotdev.blob.core.windows.net/faqstorage/"+linkarray;
+               if(document.getElementById("descarray").value==""){
+                 document.getElementById("descarray").value=descarray;  
+               }else{
+                   document.getElementById("descarray").value = document.getElementById("descarray").value +","+descarray;
+               }
+                if(document.getElementById("iconarray").value==""){
+                 document.getElementById("iconarray").value=iconarray;  
+               }else{
+                  document.getElementById("iconarray").value = document.getElementById("iconarray").value +","+iconarray;
+               }
+                if(document.getElementById("linkarray").value==""){
+                 document.getElementById("linkarray").value=linkarray;  
+               }else{
+                   document.getElementById("linkarray").value = document.getElementById("linkarray").value +","+linkarray;
+               }
+                //fetchDetails();
+            }
+    }if(localStorage.getItem('answer')!=null){
+        answer.value = localStorage.getItem('answer');
+    }
+    };
+    </script>
+    <script>
+        function test()
+        {
+            var testing= document.forms["editpolicy"]["anwer"].value;
+        }
+     </script>
+     <script>
+         function autoFit(el, factor){
+              var int = Number(factor) || 7.7;
+              function resize() {el.style.width = ((el.value.length+1) * int) + 'px'}
+              var e = 'keyup,keypress,focus,blur,change'.split(',');
+              for (var i in e) el.addEventListener(e[i],resize,false);
+              resize();
+            };
+         </script>
+  
+</head>
+
+<body class="bg-white">
+    <!-- Main navbar -->
+    <div class="navbar bg-blue">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="" height="80" width="80"></a>
+        <div class="navbar-header">
+            <h3 class="logo-container">Agent Activation Chatbot Maintenance Tool </h3>
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+        <ul class="nav navbar-nav navbar-right">
+            <li class="logo-container" style="padding-right:60px">ENVIRONMENT: DEV</li> 
+         </ul>
+        </div>
+    </div>
+    <!-- Main navbar -->
+    <!-- container -->
+    <div class="container text-center">
+        <form name="editpolicy" onsubmit ="return test() "class="form-horizontal  align-Editform-content" action="/EditPolicy" method="get" id="EditPolicy">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Intent Name:</label>
+                <div class="col-sm-10">
+                      <input type="text" disabled="disabled" readonly="true" class="form-control-static pull-left" id="getIntents" name="getIntents" />
+                       <input type="hidden" value="" id="selectResponse" class="form-control width-xs  border-blue">
+                        <input type="hidden" value="" id="answertag" class="form-control width-xs  border-blue">
+                        <input type="hidden"  value="" id="linkarray" class="form-control width-xs  border-blue">
+                        <input type="hidden" value="" id="iconarray" class="form-control width-xs  border-blue">
+                        <input type="hidden" value="" id="descarray" class="form-control width-xs  border-blue">
+                        <input type="hidden" value="" id="link" class="form-control width-xs  border-blue">
+                        <input type="hidden" value="" id="linktag" class="form-control width-xs  border-blue">
+                </div>
+            </div>
+            <div class="form-group">
+                    <label class="col-sm-2 control-label">Intent Type</label>
+                    <div class="col-sm-10" id="radioText">
+                        <div class="radio pull-left" >
+                            <label>
+                                <input class="pr-10" id="selectResponseText"  name="optionsRadios" onClick="actionselection()" type="radio">Text
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10" id="radioLink">
+                        <div class="radio pull-left">
+                            <label>
+                                <input class="pr-10" id="selectResponseLink"  name="optionsRadios" onClick="actionselection()" type="radio">Link
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-10" id="radioMedia">
+                        <div class="radio pull-left">
+                            <label>
+                                <input class="pr-10"  name="optionsRadios" id="selectResponseMedia" onClick="actionselection()" type="radio">Multimedia
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            <div class="form-group" id="Text">
+                <label class="col-sm-2 control-label">Answer:</label>
+                <div class="col-sm-10">
+                    <textarea type="text" name ="answer" class="form-control width-sm  border-blue" id="answer" placeholder="Answer"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group" id="Link">
+                    <label class="col-sm-2 control-label">Links:</label>
+                    <div class="col-sm-10">
+                            <a href="EditLinkAdd.html" class="text-black">
+                            <button type="button" class="btn btn-default bg-white btn-width-xlg mb-10 border-blue pull-left">
+                                    <span class="glyphicon glyphicon-plus pr-10"></span>Add New Link
+                                </button>
+                                </a>    
+                                <a href="EditLink.html" class="text-black" id="linkTagList">       
+                                <button type="button" class="btn btn-default bg-white btn-width-xlg mb-10 border-blue pull-left">
+                                        <span class="glyphicon glyphicon-pencil pr-10"></span>Link name here
+                                    </button>  
+                                    </a>
+                     
+                </div>  
+                  </div>
+  
+                  <div class="form-group" id="Media">
+                        <label class="col-sm-2 control-label">Multimedia:</label>
+                        <div class="col-sm-10">
+                                <a href="EditMultimediaAdd.html" class="text-black">
+                                <button type="button" class="btn btn-default bg-white btn-width-xlg mb-10 border-blue pull-left">
+                                        <span class="glyphicon glyphicon-plus pr-10"></span>Add New Multimedia
+                                    </button>
+                                    </a>
+                                    <a href="EditUtterance.html" class="text-black" id="descarrayLists">    
+                                        <button type="button" class="btn btn-default bg-white btn-width-xlg mb-10 border-blue pull-left">
+                                           <span class="glyphicon glyphicon-pencil pr-10"></span>Job Aid name here
+                                        </button>
+                                     </a>
+                    </div>  
+                      </div>
+                  
+            <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-11">
+                        <button type="submit" id="updateChart" class="btn btn-default border-blue  bg-white">Save</button>
+                        <input type="button" class="btn btn-default border-blue  bg-white" value="Cancel" onclick="location.href ='http://agentmaintenancetool.azurewebsites.net/Home.html'" />
+                        <input type="submit" id="intentDelete" value="Delete" class="btn btn-default border-blue  bg-white"/>
+                    </div>
+                </div>
+        </form>
+    </div>
+    <!-- container -->
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Agent Activation Maintenance Tool</title>
+		<script language='JavaScript' type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+			function getIntentList()
+			{
+				var formData = {};
+			    $.ajax({
+			      type: "GET",
+			      url: "http://agentmaintenancetool.azurewebsites.net/selectDataIntent",
+			      data: formData,
+			      dataType: 'json',
+			      contentType: 'application/json',
+			      success: function (res) {
+					var list_Objects = jQuery.unique(res.data.sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());}));          
+					//alert("List: " + list_Objects);
+					var listHTML = "<table border='1'>";
+					listHTML += "<tr><td>&nbsp;</td><td><a href='http://agentmaintenancetool.azurewebsites.net/IntentAdd.html'>ADD NEW INTENT</a></td></tr>";
+					$.each(list_Objects, function (key, value) {
+					  listHTML += "<tr><td>" + value + "</td><td><a href='http://agentmaintenancetool.azurewebsites.net/IntentEdit.html'>EDIT</a></td></tr>";
+			        });
+					listHTML += "<tr><td>&nbsp;</td><td><a href='http://agentmaintenancetool.azurewebsites.net/IntentAdd.html'>ADD NEW INTENT</a</td></tr>";
+					listHTML += "</table>";
+					//alert("List HTML: " + listHTML);
+					document.getElementById('intentList').innerHTML= listHTML;
+			      },
+			      error: function () {
+			        document.getElementById('intentList').innerHTML= "Unable to fetch Intent List. Please refresh the page to try again. ";
+			      }
+			    });
+			};	
+			
+		</script>
+	</head>
+	<style>
+		div.ex {
+			text-align: right width:300px;
+			padding: 10px;
+			border: 5px solid grey;
+			width: 400px;
+			margin: 0px
+		}
+	</style>
+	<body>
+		<h1>Agent Activation ChatBot</h1>
+		<h2>Intent List</h2>
+			<div class="popup" id="intentList" style="font-size:20px;">Loading... 
+			</div>
+		</div>
+		<script>getIntentList();</script>
+	</body>
+</html>

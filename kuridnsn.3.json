@@ -1,0 +1,905 @@
+[{
+	"intent": "quote.producer-record.edit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "You may update the Producer of Records on the Policy Info screen.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.state.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please look at your state&apos;s reference guide for One Product to learn more.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.re-bind",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "You may remove the quoted umbrella underlier, and then re-add.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Add an Underlier - Umbrella"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.billing.help",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact PLSC for any issues related to billing: +1 877 669 6877.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "PLSC.cancellation-date.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact PLSC for any issues related to cancellation dates: +1 877 669 6877.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.duration.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Once a policy is issued, the length of policy term cannot be changed. The system determines eligibility automatically for 6 months or annual.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "underwriting.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact your underwriter for more information.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "ITSD.producer-code.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact ITSD for any issues related to producer codes: +1 888 667 3866.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.pet-insurance.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Information about obtaining a pet insurance quote is available at   https://www.petinsurance.com/enroll/Quote1.aspx or at  +1 (877) 263-6007.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.gap-coverage.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Gap Coverage is added on the Coverages Screen for any eligible vehicles. Refer to the One Product Reference Guide for all eligibility requirements.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.MSB-excess.edit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To exceed the MSB limit on a quote, first edit the quote, go to the Coverages screen, and edit the limit.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.charge.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The Accidents and Violations screen will show what is being charged on an auto policy.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "user.question",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Okay, let&apos;s see if I can help. What is your question?",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "ITSD.no-agents.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact ITSD for any issues related to agents not showing up in PolicyCenter.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.umbrella.legacy-cross",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "If your umbrella quote is not pulling all underliers, some may be on PolicyCenter and some may be on your legacy system.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonAgentCenter_Umbrella_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Umbrella Full Application - Underlying Policies on AgentCenter - Umbrella", "Job Aid - Add an Underlier - Umbrella"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "PLSC.price.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact PLSC for any issues related to price discrepancies: +1 877 669 6877.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.down-payment.auto-calculate",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Information is available on the Payments Screen. Down payments are calculated automatically.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.document.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Documents associated with an Auto policy are found on the Documents screen. For example, Good Student and Auto Memorandum of Insurance documentation can be viewed and printed from the Online Documents tab.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.accident.driver",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateAutoFullApplicationPolicy_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid-Create Auto Full Application Policy"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "system.effective-date.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Ensure the effective date of your quote is past the PolicyCenter new business effective date for your state. If you are trying to quote prior to the PolicyCenter new business effective date for your state, return to your legacy system to complete or find your quote.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "PLSC.EFT-billing.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact PLSC for any issues related to EFT billing: +1 877 669 6877.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.max",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please visit Reference Connect to learn more about maximum quote values.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "cancellation-forms.create",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_HowtoCreateaCancellationForm_Common_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid u2013 How to Create a Cancellation Form"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.underlier.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Add an Underlier - Umbrella"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "ITSD.generic.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact ITSD for assistance: +1 888 667 3866.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.travel-trailer.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Campers / travel trailers must be insured on a Recreational Vehicle policy, which are still handled on your legacy system.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.discount.remove",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The best discounts available will be automatially identified, so there&apos;s no need to remove discounts.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.uber-lyft",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "At this time, Uber and Lyft (ride-sharing) endorsements are not available.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.new.home",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreatePropertyFullApplicationPolicy_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["JobAid - Create Property Full Application Policy"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To find an auto policy, go to the Search tab, change the &#34;Search For&#34; field to Submission, enter the primary insured&apos;s info, and then click Search.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.full-payment",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/Create a Billing Account for a New Submission_R3.5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Create a Billing Account for a New Submission"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.discount.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "All applied discounts are available on the Quotes screen.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "form.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "All forms can be found on the Documents screen. Which form are you looking for specifically?",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.auto.add.midway",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "If you are on Service Advantage, you will need to add this information on the Vehicle Exposures screen.",
+		"linkarray": ["https://agentactivationbotdev.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf", "https://agentactivationbotdev.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonAgentCenter_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationbotdev.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationbotdev.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Add an Underlier - Umbrella", "Job Aid - Umbrella - Full Application for Agent Center"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.new",
+	"entity": "quote.type_auto",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "Here is some information on how to start an auto quote.",
+		"linkarray": ["https://agentactivationbotdev.blob.core.windows.net/faqstorage/Auto Learning Snack - Full Submission.mp4", "https://agentactivationbotdev.blob.core.windows.net/faqstorage/JobAid_CreateAutoFullApplicationPolicy_R5.pdf"],
+		"descarray": ["Job Aid – Auto Learning Snack - Full Submission", "Job Aid – Job Aid-Create Auto Full Application Policy"],
+		"iconarray": ["https://agentactivationbotdev.blob.core.windows.net/aabotstorage/icon_video.png", "https://agentactivationbotdev.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "quote.type"
+	}
+}, {
+	"intent": "self.robot",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answerarray,entity_type",
+		"answerarray": ["I am a virtual assistant here to answer your simple questions and make your work life easier.", "Although I am not a person, I can answer your simple questions in natural language."],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "user.greeting",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answerarray,entity_type",
+		"answerarray": ["Hello there! How can I help you?", "Hi! How can I help you?"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.home.mgmt-co.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Landlord or management company information for Tenant quotes can be added under Dwelling Additional Interest on the Mortgagee screen.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.new",
+	"entity": "quote.type_home",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationbotdev.blob.core.windows.net/faqstorage/JobAid_CreatePropertyFullApplicationPolicy_R5.pdf"],
+		"iconarray": ["https://agentactivationbotdev.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["JobAid - Create Property Full Application Policy"],
+		"entity_type": "quote.type"
+	}
+}, {
+	"intent": "quote.new",
+	"entity": "quote.type_ho",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationbotdev.blob.core.windows.net/faqstorage/JobAid_CreatePropertyFullApplicationPolicy_R5.pdf"],
+		"iconarray": ["https://agentactivationbotdev.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["JobAid - Create Property Full Application Policy"],
+		"entity_type": "quote.type"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_home financial",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The Multi&#8211;Product Discount is available when a household member is listed as a named insured on both an Allied or Nationwide Homeowner, Tenant, or Condominium policy and at least one additional policy written in Allied or Nationwide, or a Nationwide Affiliated company. A household includes all individuals residing at the named insured&apos;s residence premises. Home financial is being removed for One Product states.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_equipment breakdown",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Equipment Breakdown for Home or Condo offers per occurrence coverage to repair or replace mechanical, electrical, electronic or fiber optic equipment for covered loss due to mechanical or electrical breakdown. Also applies to boilers and pressure vessels for rupture, bursting, bulging, implosion or steam explosion. Limited to residence premises and a $500 per occurrence deductible applies. Coverage for expediting expense, spoilage and pollutant clean up and removal may apply. Losses due to wear and tear or standard homeowner named perils are excluded.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_eq zone",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Earthquake insurance is a form of property insurance that pays the policyholder in the event of an earthquake that causes damage to the property. Most ordinary homeowners insurance policies do not cover earthquake damage. Rates depend on location and the probability of an earthquake loss. For example, rates may be cheaper for homes made of wood, which withstand earthquakes better than homes made of brick.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_earthquake insurance",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Earthquake insurance is a form of property insurance that pays the policyholder in the event of an earthquake that causes damage to the property. Most ordinary homeowners insurance policies do not cover earthquake damage. Rates depend on location and the probability of an earthquake loss. For example, rates may be cheaper for homes made of wood, which withstand earthquakes better than homes made of brick.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "policy.affinity.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Affinity discounts are based on the Affinity Group&apos;s program category and participation: \r\r Standard Auto: \r\r • Alumni & Greek &#8211; up to 7% \r\r • Professional &#8211; up to a 5% \r\r • Sports, Financial, Cause, Misc – up to a 3% \r\r  Powersports & Pet: \r\r • Up to a 5% \r\r  Please note, the discounts listed above may vary by group and state due to DOI regulations. \r\r Affinity RTMI (Real Time Member Identification) is a Nationwide exclusive tool that matches and identifies a prospect&apos;s Affinity Group relationship(s) at point of sale using the prospect's last name and address &#8211; real time. \r\r Here is a Job Aid link with instructions to help:",
+		"linkarray": ["https: //agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddAffinityRelationship_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Add Affinity Relationship"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.nationwide-customer",
+	"entity": "quote.nationwide-customer.system_property",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is some information on how to start a property quote.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/Property Learning Snack - Full Submission.mp4", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreatePropertyFullApplicationPolicy_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_video.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Property Learning Snack - Full Submission", "Job Aid-Create Property Full Application Policy"],
+		"entity_type": "quote.nationwide-customer.system"
+	}
+}, {
+	"intent": "quote.nationwide-customer",
+	"entity": "quote.nationwide-customer.system_umbrella",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is some information on how to start an Umbrella quote.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonPolicyCenter_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid Umbrella Full Application - Underlying Policies on PolicyCenter Umbrella"],
+		"entity_type": "quote.nationwide-customer.system"
+	}
+}, {
+	"intent": "quote.nationwide-customer",
+	"entity": "quote.nationwide-customer.system_auto",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is some information on how to start an auto quote.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/Auto Learning Snack - Full Submission.mp4", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateAutoFullApplicationPolicy_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_video.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Auto Learning Snack - Full Submission", "Job Aid-Create Auto Full Application Policy"],
+		"entity_type": "quote.nationwide-customer.system"
+	}
+}, {
+	"intent": "policy.bind-policy.function",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Upon selecting the &#34;Bind Policy&#34; button, final reports (EVT, MVR, etc.) are ordered. If they come back clean, you will progress to the Payments screen to finalize billing information.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.bind-policy.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "A new &#34;Bind Policy&#34; button has been added and is only available when a policy is in Quoted Status.  When the &#34;Bind Policy&#34; button is selected, reports such as EVT or MVR are ordered.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.issue-button.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "In Quoted status, the &#34;Bind Policy&#34; button is enabled and the Issue Policy button is disabled.Upon selecting the &#34;Bind Policy&#34; button, reports like EVT and MVR are ordered, and if they come back clean, then you will be taken to the Payments screen to finalize billing information and issue the policy.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.payment-gray.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Once quoted, you will need to bind the policy before enabling the payment screen.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.bind-issue.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "A new &#34;Bind Policy&#34; button has been added and is only available when the policy is in Quoted Status.When the &#34;Bind Policy&#34; button has been selected, all reports such as EVT or MVR that could potentially change eligibility and/or premiums will be ordered.\r&#160;\r Binding prior to issuing the policy prevents confidential payment information from being cleared and re-entered if adverse data is returned.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.MVR-order.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "An MVR will be ordered when the policy is in Quoted Status and the &#34;Bind Policy&#34; button has been selected.Once the &#34;Bind Policy&#34; button has been selected the MVR will be ordered.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "document-vault.upload",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Documents for bound policies can be uploaded via the Document Vault link.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "document.upload.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Documents cannot be uploaded to Document Vault if the policy has not been bound. If you need underwriting to review a document, please e-mail to them directly.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.billing.non-valid",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Payment options are only full pay or monthly - quarterly or semi-annual options are not available.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.payment.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationbotdev.blob.core.windows.net/faqstorage/JobAid_CreateaBillingAccountforaNewSubmission_Common_R5.pdf"],
+		"iconarray": ["https://agentactivationbotdev.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid – Create Billing Account for a New Submission"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.print",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Use the Print Quote button within each submission to print individual quotes. PolicyCenter is able to generate a formal proposal document with one quote.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "system.change",
+	"entity": "system.change_yes",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To start a change, navigate to the policy, click the Actions button, select **Change Policy** from the drop-down list. All changes on and after the effective date of the PolicyCenter policy must be made in PolicyCenter.  If this change also impacts the old policy, contact the Personal Lines Service Center to complete a backdated change.",
+		"entity_type": "system.change"
+	}
+}, {
+	"intent": "system.change",
+	"entity": "system.change_no",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Make the policy change in the policy&apos;s current system.",
+		"entity_type": "system.change"
+	}
+}, {
+	"intent": "system.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "Is the policy you are trying to change active on PolicyCenter?",
+		"buttons": "Yes|No",
+		"entity_type": "system.change"
+	}
+}, {
+	"intent": "CEA.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact the California Earthquake Authority (CEA) Service Center at 1-877-382-9159 for billing, coverage or offer letter questions.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.CEA-number.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The &#34;Policy Info&#34; screen of PolicyCenter will display all active CEA policies numbers.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "auto.employment.information",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Employment information is used to help determine estimated annual mileage.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "auto.group.occupation",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Group Occupation is on the driver screen and is available for the Primary Named Insured and Spouse.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "auto.odometer.reading",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Odometer information is used by Underwriting to determine annual mileage when it varies from estimated annual mileage. The odometer reading can be entered on the Vehicle Screen.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "auto.domestic.partner",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Spouse/Domestic Partner is no longer an available selection. If you need to add a Spouse/Domestic Partner select Spouse.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "auto.commute.options",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Long and short commute are no longer available options, please select work use.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.good-student.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please enter all relevant information about your customer to see what discounts are available. If the driver is eligible, navigate to the Driver&apos;s Screen to add the discount.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_by peril rating",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "By-Peril Rating is the rating of major perils separately and then totaling the peril premiums to determine the policy premium.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_canine good citizen",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "A &#34;Canine Good Citizen&#34; certificate is issued by the American Kennel Club for the dog. The American Kennel Club will provide information with regard to the training and certification. Please see Reference Connect to learn more.",
+		"link": "https://www.silverplume.com/SPOnline/SPSage.aspx?cmd=home",
+		"linktag": "Reference Connect",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_good canine",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "A &#34;Canine Good Citizen&#34; certificate is issued by the American Kennel Club for the dog. The American Kennel Club will provide information with regard to the training and certification. Please see Reference Connect to learn more.",
+		"link": "https://www.silverplume.com/SPOnline/SPSage.aspx?cmd=home",
+		"linktag": "Reference Connect",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_biological damage",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "Biological deterioration generally refers to damage from mold or fungi. Please see Reference Connect to learn more",
+		"link": "https://www.silverplume.com/SPOnline/SPSage.aspx?cmd=home",
+		"linktag": "Reference Connect",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_biological deterioration",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "Biological deterioration generally refers to damage from mold or fungi. Please see Reference Connect to learn more",
+		"link": "https://www.silverplume.com/SPOnline/SPSage.aspx?cmd=home",
+		"linktag": "Reference Connect",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_plus roadside assistance",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Basic or Plus Roadside Assistance (Rated on Other Nationwide Policy) should be selected if Basic or Plus Roadside Assistance  is selected on another policy in the household. Composition field will need to be Yes.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_by-peril rating",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "By-Peril Rating is the rating of major perils separately and then totaling the peril premiums to determine the policy premium.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_estimated annual mileage",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The annual mileage amount should be entered after the agent and member have determined the miles a vehicle is typically driven annually.  Annual mileage is determined differently from estimated annual mileage as estimated annual mileage is returned from a third party vendor based on information provided during the quote process along with public information available for the vehicle.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_estimated annual miles",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The annual mileage amount should be entered after the agent and member have determined the miles a vehicle is typically driven annually.  Annual mileage is determined differently from estimated annual mileage as estimated annual mileage is returned from a third party vendor based on information provided during the quote process along with public information available for the vehicle.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_annual mileage",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The annual mileage amount should be entered after the agent and member have determined the miles a vehicle is typically driven annually.  Annual mileage is determined differently from estimated annual mileage as estimated annual mileage is returned from a third party vendor based on information provided during the quote process along with public information available for the vehicle.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_by peril",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "By-Peril Rating is the rating of major perils separately and then totaling the peril premiums to determine the policy premium.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_annual miles",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The annual mileage amount should be entered after the agent and member have determined the miles a vehicle is typically driven annually.  Annual mileage is determined differently from estimated annual mileage as estimated annual mileage is returned from a third party vendor based on information provided during the quote process along with public information available for the vehicle.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_by - peril rating",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "By-Peril Rating is the rating of major perils separately and then totaling the peril premiums to determine the policy premium.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_by - peril",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "By-Peril Rating is the rating of major perils separately and then totaling the peril premiums to determine the policy premium.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_occupation discount",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "If the named insured or spouse/Registered Domestic Partner is a member of certain professional groups the discount may be applied.  Please consult Reference Connect for additional details.",
+		"link": "https://www.silverplume.com/SPOnline/SPSage.aspx?cmd=home",
+		"linktag": "Reference Connect",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_group discount",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "If the named insured or spouse/Registered Domestic Partner is a member of certain professional groups the discount may be applied.  Please consult Reference Connect for additional details.",
+		"link": "https://www.silverplume.com/SPOnline/SPSage.aspx?cmd=home",
+		"linktag": "Reference Connect",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_group occupational discount",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "If the named insured or spouse/Registered Domestic Partner is a member of certain professional groups the discount may be applied.  Please consult Reference Connect for additional details.",
+		"link": "https://www.silverplume.com/SPOnline/SPSage.aspx?cmd=home",
+		"linktag": "Reference Connect",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_basic roadside assistance",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Basic or Plus Roadside Assistance (Rated on Other Nationwide Policy) should be selected if Basic or Plus Roadside Assistance  is selected on another policy in the household. Composition field will need to be Yes.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_homeowner discounts",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "Please refer to your state&apos;s One Product Reference Guide for information about Homeowner Discount.",
+		"link": "https://www.silverplume.com/SPOnline/SPSage.aspx?cmd=home",
+		"linktag": "Reference Connect",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_30 day diary",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "30 day diary is a follow-up reminder for a new activity.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_home financial discounts",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The Multi-Product Discount is available when a household member is listed as a named insured on both an Allied or Nationwide Homeowner, Tenant, or Condominium policy and at least one additional policy written in Allied or Nationwide, or a Nationwide Affiliated company. A household includes all individuals residing at the named insured&apos;s residence premises. Home financial is being removed for One Product states.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_occupational discount",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "If the named insured or spouse/Registered Domestic Partner is a member of certain professional groups the discount may be applied.  Please consult Reference Connect for additional details.",
+		"link": "https://www.silverplume.com/SPOnline/SPSage.aspx?cmd=home",
+		"linktag": "Reference Connect",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "test123",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "test123",
+		"entity_type": "NA"
+	}
+}]

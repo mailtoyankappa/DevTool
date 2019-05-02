@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agent Activation Chatbot Maintenance Toolt</title>
+    <!-- Global stylesheets -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!--<script language="JavaScript" type="text/javascript" src="js/jquery.js"></script>-->
+    <script language="JavaScript" type="text/javascript" src="app.js"></script>
+    <script language='JavaScript' type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <!-- Core JS files -->
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script>
+        function showIcon(){
+            var uploadFile = document.getElementById('uploadFile').value;
+            var  iconarray = document.getElementById('iconarray');
+            var fileExtention =  uploadFile.slice(uploadFile.lastIndexOf('.'));
+            if(fileExtention==".pdf"){              
+              iconarray.value = "https://agentactivationbotdev.blob.core.windows.net/aabotstorage/icon_pdf.png";
+            }else if(fileExtention==".txt"){
+                iconarray.value = "";
+            }else if(fileExtention==".mp4"){
+                iconarray.value = "https://agentactivationbotdev.blob.core.windows.net/aabotstorage/icon_video.png"
+            }            
+        }
+        </script>
+      <script>
+        function validateaddmultimediaeditform(){
+            var flag=true;
+            
+            var multiname= document.forms["EditMultimediaAddFile"]["descarray"].value;
+            var multiicon= document.forms["EditMultimediaAddFile"]["iconarray"].value;
+            var multifile= document.forms["EditMultimediaAddFile"]["uploadFile"].value;
+             if (multiname=="" ) //|| linkadd=="")
+             {
+                 alert('Please Input The Required  multi Fields');
+                 document.forms["EditMultimediaAddFile"]["descarray"].style.borderColor = "red";
+                // var AddMultimediaFile = document.getElementById("AddMultimediaFile");
+                 //AddMultimediaFile.action = "http://agentmaintenancetoolsandbox.azurewebsites.net/AddMultimediaFile.html";
+                 return false;
+                 flag=false;
+             }
+             else
+                document.forms["EditMultimediaAddFile"]["descarray"].style.borderColor = "black";
+                if (multiicon=="" ) //|| linkadd=="")
+                 {
+                     alert('Please Input The Required linnnn Fields');
+                     document.forms["EditMultimediaAddFile"]["iconarray"].style.borderColor = "red";
+                     return false;
+                     //var AddMultimediaFile = document.getElementById("AddMultimediaFile");
+                     //AddMultimediaFile.action = "http://agentmaintenancetoolsandbox.azurewebsites.net/AddMultimediaFile.html";
+                      flag=false;
+                 }
+                 else
+                    document.forms["EditMultimediaAddFile"]["uploadFile"].style.borderColor = "black";
+                    //uploadfileinazure(); 
+                    
+             if(flag==true){
+                 uploadfileinazure();
+                 var linkarray = document.getElementById("uploadFile").files[0].name;
+                    linkarray = "https://agentactivationbotdev.blob.core.windows.net/faqstorage/"+linkarray;
+                    localStorage.setItem('newlinkarray',linkarray);
+                    var descarray = document.getElementById("descarray").value;
+                    localStorage.setItem('newdescarray',descarray);
+                    var iconarray = document.getElementById("iconarray").value;
+                    localStorage.setItem('newiconarray',iconarray);
+                     if(localStorage.getItem("cancelReload")!=null){
+                     localStorage.removeItem('cancelReload');
+                    } 
+             }else{
+                 alert('Please Input The Required Fields');
+                 var EditMultimediaAddFile = document.getElementById("EditMultimediaAddFile");
+                 EditMultimediaAddFile.action = "http://agentmaintenancetool.azurewebsites.net/EditMultimediaAdd.html";
+                 document.forms["EditMultimediaAddFile"]["descarray"].style.borderColor = "red";
+                 return false;   
+             }  
+        }
+        </script>
+        <script>
+               function uploadfileinazure(){
+                var data = new FormData();
+                $.each($('#uploadFile')[0].files, function(i, file) {
+                    data.append('file-'+i, file);
+                });
+                  //data.append('iconarray', $('input[name=iconarray]').val());
+                  //data.append('descarray', $('input[name=descarray]').val());
+                 // alert("Updated Succesfully..!! "+data);
+                $.ajax({
+                  type: "POST",
+                  url: "http://agentmaintenancetool.azurewebsites.net/uploadfileinazure",
+                  data: data,
+                  cache: false,
+                  processData: false,  // tell jQuery not to process the data
+                  contentType: false,  // tell jQuery not to set contentType
+                  success: function (res) {
+                   console.log(res);
+                   alert("File Uploaded Succcesfully ...!!");
+                   var uploadFile = document.getElementById('uploadFile').value;
+                  },
+                  error: function () {
+                    //Show status
+                    console.log(res);
+                  }
+                });
+             }; 
+ </script>
+  <script>
+     function goBack(){
+         localStorage.setItem('cancelReload',"cancelReload");
+         window.history.back();         
+     }
+     </script>
+</head>
+
+<body class="bg-white">
+    <!-- Main navbar -->
+    <div class="navbar bg-blue">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="" height="80" width="80"></a>
+        <div class="navbar-header">
+            <h3 class="logo-container">Agent Activation Chatbot Maintenance Tool </h3>
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+        <ul class="nav navbar-nav navbar-right">
+            <li class="logo-container" style="padding-right:60px">ENVIRONMENT: DEV</li> 
+         </ul>
+        </div>
+    </div>
+    <!-- Main navbar -->
+    <!-- container -->
+    <div class="container text-center">
+            <form class="form-horizontal  align-form-content" name="EditMultimediaAddFile" action="EditPolicy.html" method="get" onsubmit ="return validateaddmultimediaeditform()" id="EditMultimediaAddFile" >
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Multimedia</label>
+                        <div class="col-sm-10">
+                            <input id="descarray" type="textarea" name="descarray" class="form-control width-xs border-blue" placeholder="Multimedia Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="col-sm-2 control-label">File</label>
+                            <div class="col-sm-10">
+                                <!--<button type="file" name="uploadFile" id="uploadFile" class="btn btn-default pull-right btn-m-r-xl  border-blue  bg-white" name="uploadFile" id="uploadFile">Choose</button>-->
+                                <input type="file" name="uploadFile" id="uploadFile" onchange="showIcon()" class="form-control width-xs  border-blue" placeholder="Attach file">
+                                <!--<td><input type="submit" id="upload" onclick="uploadfileinazure()" enctype="multipart/form-data"></td>-->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <label class="col-sm-2 control-label">Icon</label>
+                                <div class="col-sm-10">
+                                    <!--<button type="file" class="btn btn-default pull-right btn-m-r-xl  border-blue  bg-white">Choose</button>-->
+                                    <input id="iconarray" type="text" name="iconarray" class="form-control width-xs  border-blue" placeholder="">              
+                                </div>
+                            </div>
+                    <div class="form-group ml-xlg">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <button type="submit" class="btn btn-default border-blue  bg-white" onclick="validateaddmultimediaform()">Save</button>
+                                <!--<input type="button" class="btn btn-default border-blue  bg-white" value="Cancel" onclick="location.href ='http://agentmaintenancetool.azurewebsites.net/AddIntent.html'" />-->
+                                <input type="button" class="btn btn-default border-blue  bg-white" value="Cancel" onclick="goBack()" />
+                            </div>
+                        </div>
+                </form>
+    </div>
+    <!-- container -->
+</body>
+
+</html>

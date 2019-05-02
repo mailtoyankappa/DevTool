@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agent Activation Chatbot Maintenance Tool</title>
+    <!-- Global stylesheets -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!--<script language="JavaScript" type="text/javascript" src="js/jquery.js"></script>-->
+    <script language="JavaScript" type="text/javascript" src="app.js"></script>
+    <script language='JavaScript' type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <!-- Core JS files -->
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    
+    <script>
+          function loadlinkDetails(){
+            var urlParams = window.location.href;
+            var list = urlParams.split("?")[1];
+             var intent = list.split("=")[1];    
+             localStorage.setItem("intent", intent);
+             document.getElementById('intent').value=intent;
+           var formData = {
+              //'intent': $('input[name=intent]').val()
+              'intent': intent
+            };
+            $.ajax({
+              type: "GET",
+              url: "http://agentmaintenancetool.azurewebsites.net/selectDataValidate",
+              data: formData,
+              dataType: 'json',
+              contentType: 'application/json',
+              success: function (res) {
+                var list_Objects = jQuery.unique(res.data); 
+                console.log("count of the entity in intent : "+list_Objects.length);  
+                if(list_Objects.length==1){ 
+                    console.log(list_Objects);
+                    $("#link").val(list_Objects[0].link); 
+                    $("#linktag").val(list_Objects[0].linktag);               
+               }else {
+                  alert("This intent contains entities. Please contact IT to make changes to it.");
+                  window.location.href = 'http://agentmaintenancetool.azurewebsites.net/Home.html';
+                  return 0;
+               }       
+              },
+              error: function () {
+                console.log(res.data);
+                alert("Unable to Fetch Response based on Entity and Intent try again..!! ");
+                window.location.href = 'http://agentmaintenancetool.azurewebsites.net/DeleteIntent.html';
+              }
+            });
+         };
+         window.onload = loadlinkDetails;
+    </script>
+    <script>
+        function validateaddlinkform(){
+            var linkss = document.getElementById("link").value;
+            localStorage.setItem('link',linkss);
+            var linktagss = document.getElementById("linktag").value;
+            localStorage.setItem('linktag',linktagss);
+        }
+        </script>
+</head>
+
+<body class="bg-white">
+    <!-- Main navbar -->
+    <div class="navbar bg-blue">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="" height="80" width="80"></a>
+        <div class="navbar-header">
+            <h3 class="logo-container">Agent Activation Chatbot Maintenance Tool</h3>
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+        <ul class="nav navbar-nav navbar-right">
+            <li class="logo-container" style="padding-right:60px">ENVIRONMENT: DEV</li> 
+         </ul>
+        </div>
+    </div>
+    <!-- Main navbar -->
+    <!-- container -->
+    <div class="container text-center">
+            <form class="form-horizontal  align-form-content" action="EditPolicy.html" onsubmit ="return validateaddlinkform()" method="get" id="EditLink" >
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Link Address</label>
+                        <div class="col-sm-10">
+                            <input id="intent" type="hidden" name="intent" class="form-control width-xs border-blue">
+                            <input id="link" type="textarea" name="link" class="form-control width-xs border-blue" placeholder="Link">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                                <label class="col-sm-2 control-label">Link Name</label>
+                                <div class="col-sm-10">
+                                    <!--<button type="file" class="btn btn-default pull-right btn-m-r-xl  border-blue  bg-white">Choose</button>-->
+                                    <input id="linktag" type="text" name="linktag" class="form-control width-xs  border-blue" placeholder="">              
+                                </div>
+                            </div>
+                    <div class="form-group ml-xlg">
+                            <div class="col-sm-offset-1 col-sm-11">
+                                <button type="submit" class="btn btn-default border-blue  bg-white" >Edit Link</button>
+                                <input type="button" class="btn btn-default border-blue  bg-white" value="Cancel" onclick="location.href ='http://agentmaintenancetool.azurewebsites.net/EditPolicy.html'" />
+                            </div>
+                        </div>
+                </form>
+    </div>
+    <!-- container -->
+</body>
+
+</html>

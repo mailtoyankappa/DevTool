@@ -1,0 +1,1118 @@
+[{
+	"intent": "training.find",
+	"entity": "training.subject_one product",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "Here is a link to a list of reference materials for One Product.",
+		"link": "https://pages-nationwide.com/PolicyCenterandOneProduct/",
+		"linktag": "One Product",
+		"entity_type": "training.subject"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "What term would you like defined?",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PolicyCenterTerminologyReferenceSheet_Agent Version_Common_R5.pdf"],
+		"descarray": ["Job Aid - PolicyCenter Terminology Reference Sheet – Agent Version"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "policy.auto.vehicle.add-delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddandDeleteaVehicleorTrailer_Auto_R4_Final.pdf"],
+		"descarray": ["Job Aid - Add and Delete a Vehicle or Trailer"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "report.order",
+	"entity": "report.type_credit bureau",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "You can simply click re-order credit bureau report.  \r\r Here is a link to more information about ordering reports:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Auto_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Property_R5.pdf"],
+		"descarray": ["Job Aid - Report Ordering - Auto", "Job Aid – Report Ordering – Property"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "report.type"
+	}
+}, {
+	"intent": "policy.umbrella.add",
+	"entity": "policy.umbrella.add.option_retrieve additional policies",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "The Retrieve Additional Policies button is used when the underliers are not listed in the PolicyCenter account, but are Nationwide (AGSS) policies.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonAGSS_Umbrella_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Umbrella Full Application – Underlying Policies on AGSS – Umbrella", "Job Aid - Add an Underlier – Umbrella"],
+		"entity_type": "policy.umbrella.add.option"
+	}
+}, {
+	"intent": "report.order",
+	"entity": "report.type_prior losses",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To Re-Order Loss History report, click the Re-Order Auto Loss History Report button or Re-Order Loss History Report button.  \r\r Here is a link to more information about ordering reports:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Auto_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Property_R5.pdf"],
+		"descarray": ["Job Aid - Report Ordering - Auto", "Job Aid - Report Ordering - Property"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "report.type"
+	}
+}, {
+	"intent": "report.order",
+	"entity": "report.type_cat underwriting",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "For Catastrophe Services reports, click Re-Order CAT Services EQ or the Re-Order CAT Service HU button.  \r\r Here is a link to more information about ordering reports:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Property_R5.pdf"],
+		"descarray": ["Job Aid - Report Ordering"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "report.type"
+	}
+}, {
+	"intent": "document.send",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To send documents, click the Documents link in the left navigation pane, then click the Add button. Select the checkboxes for the documents you want to add, click Update. Select all documents you want to send, click eSign Documents, validate email address, and then click Send.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "report.order",
+	"entity": "report.type_prior policies",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "The Prior Policies tab provides current carrier information returned from the Current carrier report returned with ALH.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Report Ordering – Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "report.type"
+	}
+}, {
+	"intent": "policy.umbrella.add",
+	"entity": "policy.umbrella.add.option_retrieve account policies",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "The Retrieve Account Policies button is used to retrieve existing Nationwide policies on the PolicyCenter account. The system automatically engages this function if underlying policies exists on the PolicyCenter account.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonPolicyCenter_Umbrella_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Umbrella Full Application – Underlying Policies on PolicyCenter – Umbrella", "Job Aid - Add an Underlier – Umbrella"],
+		"entity_type": "policy.umbrella.add.option"
+	}
+}, {
+	"intent": "policy.renewal.edit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To edit policy renewals \r 1. Only unbound renewals can be edited. If the renewal has been bound, a policy change is required. \r 2. To edit an unbound renewal, go to the Summary screen of the policy. \r 3. From Work Orders in Progress section, select the Renewal Work Order number. \r 4. Click the Edit button at the top of the screen area, read the pop-up message and click the OK button, and on the Policy Info screen, click the Coverages link in the left navigation pane.\r 5. Make all edits, click Quote, click the Policy Review link in the left navigation pane, review changes, and click the Renew button. Click OK on the pop-up screen.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PolicyRenewalProcess(TeamTab)_Common_R5.pdf"],
+		"descarray": ["Job Aid - Policy Renewal Process (Team Tab)"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.add",
+	"entity": "policy.umbrella.add.option_create policy",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "The Create Policy button is used when you need to add an AgentCenter policy, such as a Nationwide affiliated company (Allied, or Harleysville), a Nationwide-Hagerty, a Powersports, or a Private Client underlier to the submission.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonAgentCenter_Umbrella_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Umbrella Full Application – Underlying Policies on AgentCenter – Umbrella", "Job Aid - Add an Underlier – Umbrella"],
+		"entity_type": "policy.umbrella.add.option"
+	}
+}, {
+	"intent": "policy.auto.driver.add-delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddDeleteaDriver_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Add or Delete a Driver - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.property.fire-submit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PropertyDwellingFireSubmission_Property_R5.pdf"],
+		"descarray": ["Job Aid - Property Dwelling Fire Submission"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.discount.multi-car-apply",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ApplyMultiCarDiscount_Auto_R5.pdf"],
+		"descarray": ["Job Aid – Apply Multi Car Discount - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.additional-interest.add-delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddandDeleteanAdditionalInterest(Third Party)_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Add and Delete an Additional Interest (Third Party) - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.underwriting.property.view",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UnderwritingApprovalRulesforStandardProperty_Property_R4.0.pdf"],
+		"descarray": ["Job Aid - Underwriting Approval Rules for Standard Property"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_third party",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Property third party** or **mortgagee** are equivalent to **third party** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "policy.auto.address-change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddorChangeGaragingAddress_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Add or Change Garaging Address - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.holder.location-exposure.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ChangePolicyholderLocationExposureAddress_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid - Change Policyholder Location Exposure Address"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.condo.submit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PropertyCondominiumSubmission_R5.pdf"],
+		"descarray": ["Job Aid - Property Condominium Submission"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.underlier-limits.update",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UpdatetheLimitsofanUnderlier_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid - Update the Limits of an Underlier"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.secondary-insured.add-delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddorDeleteSecondaryNamedInsured_Auto_Property_R5.pdf"],
+		"descarray": ["Job Aid - Add or Delete a Secondary Named Insured - Auto/Property"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.deductible-coverage.update",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UpdateDeductiblesandCoverages_Auto_R5.pdf"],
+		"descarray": ["Job Aid – Update Deductibles and Coverages - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "notes.access-search-edit-delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AccessSearchEditandDeleteNotes_Common_R5.pdf"],
+		"descarray": ["Job Access Search Edit and Delete Notes Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.driver.exclude",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_HowtoApplyExcludedorNon-DriverStatus_Auto_R5.pdf"],
+		"descarray": ["Job Aid – How to Apply Excluded or Non-Driver Status - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.info.view",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ViewUmbrellaPolicy_R5.pdf"],
+		"descarray": ["Job Aid - View Umbrella Policy Information"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.additional-named.add-delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/Job Aid_AddorDeleteAdditionalNamedInsured(Trusts)_Property_Umbrella_R4_Final.pdf"],
+		"descarray": ["Job Aid - Add or Delete Additional Named Insured (Trusts) Property/Umbrella"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.coverages.update",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UpdateUmbrellaCoverages_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid - Update Umbrella Coverages"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.vehicle.add",
+	"entity": "policy.auto.vehicle.add_yes",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "To add a fifth vehicle to an existing policy: \r\r 1. On the summary screen of the source policy, click the Actions button and select 5th vehicle. \r 2. Complete the 5th vehicle quote using the Create 5th Vehicle Policy job aid as your guide.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_HowtoQuoteaNewCustomerwith5ormoreVehicles_Auto_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_Create5thVehiclePolicy_Auto_R5.pdf"],
+		"descarray": ["How to Quote a New Customer with 5 or more Vehicles", "Create 5th Vehicle Policy"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "policy.auto.vehicle.add"
+	}
+}, {
+	"intent": "policy.auto.vehicle.add",
+	"entity": "policy.auto.vehicle.add_no",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddorDeleteaVehicleorTrailer_R5.pdf"],
+		"descarray": ["JobAid Add and Delete a Vehicle or Trailer Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "policy.auto.vehicle.add"
+	}
+}, {
+	"intent": "mortgagee.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To change a mortgagee, on the Policy Info screen, click the Mortgagee/Additional Interest link. You can select and edit existing mortgagees or add new ones by clicking Add under the right section. Populate fields and click OK. Or, you can select the existing mortgagee and click on Remove to delete it.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddMortagee(Third Party)_Property_R5.pdf"],
+		"descarray": ["Job Aid - Add Mortagee (Third Party)"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.underlier.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid - Add an Underlier"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.rewrite",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_RewritePolicy_Common_R4.0.pdf"],
+		"descarray": ["Job Access Rewrite Policy Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_renewal",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here is a link to more information about policy renewal:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/Policy Renewal Process (Team Tab)_R3.5.pdf"],
+		"descarray": ["Job Aid- Policy Renewal Process"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "policy.status",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PolicyStatus_Common_R5.pdf"],
+		"descarray": ["Job Aid - Policy Status Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.changes.renewal-period",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ChangestoaPolicyduringtheRenewalPeriod_Common_R5.pdf"],
+		"descarray": ["Job Access Changes to a Policy during the Renewal Period Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "ID-card.print",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PrintInsuranceIDCardatmynationwide.com_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Print Insurance ID Card at mynationwide.com"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.2nd-residence.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddASecondaryResidence_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid - Add a Secondary Residence"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.copy",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CopyData_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Copy Data - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.driver.exclude-umbrella",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ExcludeaDriveronanUmbrellaPolicy_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid - Exclude a Driver on an Umbrella Policy Umbrella"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.underwriting.prequote-issue.clear",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ClearUnderwritingPreQuoteIssue_R5.pdf"],
+		"descarray": ["Job Access Clear Underwriting PreQuote Issue"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "activity.assign",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_HowtoAssignActivitiesfromtheTeamtab_R5.pdf"],
+		"descarray": ["Job Aid - How to Assign Activities from the Team Tab"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.vehicle.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "Were you trying to add a fifth vehicle?",
+		"buttons": "Yes|No",
+		"entity_type": "policy.auto.vehicle.add"
+	}
+}, {
+	"intent": "online-account.create",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateanOnlineAccountonNationwide.com_R5.pdf"],
+		"descarray": ["Job Aid - Create an Online Account on Nationwide.com"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.underwriting.approval.request",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_RequestUnderwriterApproval _R5.pdf"],
+		"descarray": ["Job Access Request Underwriter Approval"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.underwriting.umbrella.view",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UnderwitingApprovalRulesforUmbrella_Umbrella_R4.0.pdf"],
+		"descarray": ["Job Aid - Underwiting Approval Rules for Umbrella"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "transfer.policy",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PolicyTransferProcess_Common_R5.pdf"],
+		"descarray": ["Job Aid - Policy Transfer Process Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "user.positiveresponse",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Great! Thanks for letting me know!",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.cancel",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CancelaPolicy_Common_R5_DraftA.pdf"],
+		"descarray": ["Job Aid - Cancel a Policy Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.address.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ChangeMailingAddress_Common_R5.pdf"],
+		"descarray": ["Job Aid - Change Mailing Address"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "internet-browser.recommend",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_RecommendedInternetBrowsersforPolicyCenter_Common_R5.pdf"],
+		"descarray": ["Job Aid - Recommended Internet Browsers for PolicyCenter Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.vehicle.delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddorDeleteaVehicleorTrailer_R5.pdf"],
+		"descarray": ["Job Aid - Add or Delete a Vehicle or Trailer"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "policy.auto.vehicle.delete"
+	}
+}, {
+	"intent": "policy.home.full-payment",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateaBillingAccountforaNewSubmission_Common_R5.pdf"],
+		"descarray": ["Job Aid - Create a Billing Account for a New Submission Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.separate",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_MovePoliciesfromOneAccounttoAnother_R5.pdf"],
+		"descarray": ["Job Aid - Move Policies from One Account to Another"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.agent-name.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UpdateAgencyPrintOutputAddress_Common_R5.pdf"],
+		"descarray": ["Update Agency Print Output Address Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_SearchforanAccountandPolicy_Common_R5.pdf"],
+		"descarray": ["Job Aid - Search for an Account and Policy"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "credit-report.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Report Ordering - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "home-memo.print",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The Memorandum of Insurance is found on the Online Documents tab, on the Documents screen and is updated in real time.  In some cases you may need to click the **Add** button and select the memorandum of Insurance from that list. ",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "coverage-reduction.form.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The reduction / deletion form is automatically generated when required by state law.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "user.team-tab",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here are two Job Aid links with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_HowtoAssignActivitiesfromtheTeamtab_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PolicyRenewalProcess(TeamTab)_Common_R5.pdf"],
+		"descarray": ["Job Aid - How to Assign Activities from the (Team Tab)", "Job Aid - Policy Renewal Process (Team Tab)"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.replacement",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "New Car Replacement is added on the Coverages screen for any eligible vehicles. Refer to the One Product Reference Guide for all eligibility requirements.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "withdrawn-submission.update",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "It is not possible to update a withdrawn submission. Please start a new submission from the Account.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "umbrella.motorcycle.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonAgentCenter_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid - Underlying Policies on Agent Center - Umbrella"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.defaults",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateAutoQuoteDefaults_R5.pdf"],
+		"descarray": ["Job Aid - Create Auto Quote Defaults"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.return",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To return to a prior quote, simply go to your account and choose the correct work order.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.auto.credit-pull",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Report Ordering Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "claims.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please refer to your underwriting screen for more information about claims.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.farm-bureau.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Farm bureau membership discount only applies to voting members. Please contact the service center for additional info.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "declaration-page.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Declarations/Dec Pages can be printed from the Print Customer Documents tab on the Documents screen. Dec pages and other documents are not available in PolicyCenter until one (1) business day after the policy and/or change is issued.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "vanishing-deductible.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The vanishing deductible credit is on the coverages screen on the rating factors tab.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "MVR.run.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Report Ordering - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "second-insured.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddorDeleteSecondaryNamedInsured_Auto_Property_R5.pdf"],
+		"descarray": ["Job Aid - Add or Delete Secondary Named Insured - Auto/Property"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "jewelry.value",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The appraisal limit for jewelry is $10k. Anything above this limit will require an appraisal.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "work-orders.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "What are you looking for regarding work orders?",
+		"buttons": "Recently Accessed WOs|Completed WOs|Other",
+		"entity_type": "work-orders.reply"
+	}
+}, {
+	"intent": "declaration-page.print",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Declarations/Dec Pages can be printed from the Print Customer Documents tab on the Documents screen. Dec pages and other documents are not available in PolicyCenter until one (1) business day after the policy and/or change is issued.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.merge",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_MergeAccountsinPolicyCenter_Common_R5.pdf"],
+		"descarray": ["Job Aid - Merge Accounts in Policy Center"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "agency.address",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UpdateAgencyPrintOutputAddress_Common_R5.pdf"],
+		"descarray": ["Job Aid - Update Agency Print Output Address Common"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "coverage.question",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "If your coverage question is regarding an underwriting issue, please contact your underwriter directly. Otherwise, you may type **trainer** to reach a live person, or you can ask again with more detail.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "ID.both-names.print",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Only permanent ID cards mailed from the company will display the secondary named insured if they are added to the policy.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "self.features",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "I can help answer several questions commonly asked by agents, such as **where do I start a quote,** **how to order reports,** or **what does this term mean.** Feel free to ask me a question!",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_changes",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Changes** or **amendments** are equivalent to **policy change and work order** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "report.order",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "Which type of report do you want to order?",
+		"buttons": "Prior Policies|Prior Losses|Credit Bureau|Motor Vehicle|CAT Underwriting",
+		"entity_type": "report.type"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_rate",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Rate** is equivalent to **quote** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_insured location",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Insured location** is equivalent to **location exposure** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "user.thankyou",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answerarray,entity_type",
+		"answerarray": ["You are welcome!", "Anytime!", "Glad I could help!", "No problem!"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "menu.show",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Right now, you can ask me to define a PolicyCenter term, explain how to find or complete a simple task, or find the right Job Aid or Learning Snack for you.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "self.state",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answerarray,entity_type",
+		"answerarray": ["I&apos;m doing well!", "Great! Happy to help."],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_bind",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Bind** or **release** are equivalent to **issue** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "user.sorry",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answerarray,entity_type",
+		"answerarray": ["No worries!", "That&apos;s okay!"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_follow ups",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Electronic memos** or **follow ups** are equivalent to **activities** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_rate again",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Requote** or **rate again** are equivalent to **edit** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_policy term",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Policy period** or **policy term** are equivalent to **effective and inspiration date** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_service fee",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Installment fee** or **service fee** are equivalent to **installment** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_change of state",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**IRT** or **change of state** are equivalent **state transfer (IRT)** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_requote",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Requote** or **rate again** are equivalent to **edit** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "human.elevate",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "Okay, please click below if you&apos;d like to speak to a trainer. Please note, Training Connection hours are Monday-Friday **9:30 a.m. to 7:30 p.m. EST** (excluding holidays).",
+		"link": "https://nationwideacademy.adobeconnect.com/trainingconnection/",
+		"linktag": "Chat with a trainer",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_submission",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**New business** is equivalent to **submission** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_replacement cost contents",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Brand new belongings** or **replacement cost contents** are equivalent to **brand new belongings** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "user.negativeresponse",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Thank you for your feedback. I&apos;ll let the team know, and we&apos;ll work to make this better.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "self.creator",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "I have been told a lot of people worked on me, but as far as I am concerned, I belong to Nationwide!",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_property address",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Mailing address** or **property address** are equivalent to **policy address** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_incomplete",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Incomplete or held charge** is equivalent to **preemption** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}]

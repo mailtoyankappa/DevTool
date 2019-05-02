@@ -1,0 +1,1028 @@
+[{
+	"intent": "document.reprint",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To print/reprint documents, click the Documents link in the left navigation pane. On the Online Documents tab, click the View button for the appropriate document, then print the document as normal. From the Print Customer Documents tab, click the View/Print button for the appropriate document, then print as normal. From the Resend Print tab,  select the check box to the left of the appropriate document(s) and click the Resend button. Note: using this feature mails a copy of the document directly to the customer.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_installment fee",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Installment fee** or **service fee** are equivalent to **installment** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_activities",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Electronic memos** or **follow ups** are equivalent to **activities** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_electronic memos",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Electronic memos** or **follow ups** are equivalent to **activities** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_start a change",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Start a change** or **key a change** are equivalent to **change policy** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_residence",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Dwelling location** or **residence** are equivalent to **location address** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_irt",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**IRT** or **change of state** are equivalent **state transfer (IRT)** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_dwelling location",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Dwelling location** or **residence** are equivalent to **location address** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_policy state",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Policy state** is equivalent to **rate state** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_change policy",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Start a change** or **key a change** are equivalent to **change policy** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_key a change",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Start a change** or **key a change** are equivalent to **change policy** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_transfer",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Rewrite** is equivalent to **transfer** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_loss of use",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Loss of use** is equivalent to **rental reimbursement** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_issue",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Bind** or **release** are equivalent to **issue** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_amendments",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Changes** or **amendments** are equivalent to **policy change and work order** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_held charge",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Incomplete or held charge** is equivalent to **preemption** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_mailing address",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Mailing address** or **property address** are equivalent to **policy address** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_rate state",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Policy state** is equivalent to **rate state** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_discounts",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**View discount surcharges** or **discounts** are equivalent to **applied rate modifiers** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_use of another automobile",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Use of another vehicle** or **use of other motor vehicles** are equivalent to **extended non-owner coverage** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_rewrite",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Rewrite** is equivalent to **transfer** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_pul",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**PUL** is equivalent to **umbrella** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "account.billing.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To change a billing account, for a quoted submission, navigate to the Payment screen. For bound policies, Exclusive Agents can use BAM directly, Independent Agents should use AgentCenter. \r\r Here are some links to more information about changing account billing:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateaBillingAccountforaNewSubmission_Common_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_MultiSourceDownPayments_Common_R5.pdf"],
+		"descarray": ["Job Aid - Create a Billing Account for a New Submission", "Job Aid - Multi - Source Down Payments"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_new business",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**New business** is equivalent to **submission** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_use of other motor vehicles",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Use of another vehicle** or **use of other motor vehicles** are equivalent to **extended non-owner coverage** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "report.order",
+	"entity": "report.type_motor vehicle",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "Click Re-Order Motor Vehicle Records, but this is only available with &#34;No Hit&#34; status.  \r\r Here is a link to more information about ordering reports:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Report Ordering"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "report.type"
+	}
+}, {
+	"intent": "error.define",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "I am not able to provide information on specific error messages, but in general, there are two types of common errors: \r 1. Action Required errors prompt for certain fields to be completed to advance to the next screen.\r 2. System Validation/Informational messages may require action before binding a policy but typically do not prevent quoting. \r\r Here is a link to more information about validation messages:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_TypesofValidationMessagesinPolicyCenter_R5.pdf"],
+		"descarray": ["Job Aid - Types of Validation Messages in PolicyCenter"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_mortgagee",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Property third party** or **mortgagee** are equivalent to **third party** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_property third party",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Property third party** or **mortgagee** are equivalent to **third party** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "comments.underwriting.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To find underwriting comments, navigate to My Activities in your Desktop tab, and click the link of the activity you wish to review comments on. Click the View Notes button to view the notes from the underwriter. \r\r Here is a link to more information about finding underwriting comments:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_Follow-upCapabilitiesforAgents_Common_R5.pdf"],
+		"descarray": ["Job Aid - Follow-up Capabilities for Agents"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_policy transfer",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Conversion to PolicyCenter** is equivalent to **policy transfer** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "policy.unlock",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To unlock a policy: \r 1. Click the Underwriting link to review the approval reason.\r 2. Click Request Approval for the blocking bind, and fill out Description, Topic, Subject, and any useful text.\r 3. You&apos;ll see a decision later under My Activities on your Desktop tab.  \r\r Here are some links to more information about unlocking a policy:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ClearUnderwritingPreQuoteIssue_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_RequestUnderwriterApproval _R5.pdf"],
+		"descarray": ["Job Aid - Clear Underwriting PreQuote Issue", "Job Aid - Request Underwriter Approval"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_view discount surcharges",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**View discount surcharges** or **discounts** are equivalent to **applied rate modifiers** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_extended non-owned",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Use of another vehicle** or **use of other motor vehicles** are equivalent to **extended non-owner coverage** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "document.sign",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To begin eSignature, click View Documents, then check the box agreeing to use of electronic record and signatures. Click Start, navigate through the pages, and then click or draw a signature before clicking Finish.  \r\r Here is a link to more information about the eSignature process:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_eSignatureProcessforSigners_R5.pdf"],
+		"descarray": ["Job Aid - e-Signature Process for Signers"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_premier endorsement",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Premier endorsement** is equivalent to **protection boost** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_policy period",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Policy period** or **policy term** are equivalent to **effective and inspiration date** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "policy.umbrella.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "In PolicyCenter, there are three options for entering underlying policies. Which would you like to learn more about?",
+		"buttons": "Create Policy|Retrieve Account Policies|Retrieve Additional Policies",
+		"entity_type": "policy.umbrella.add.option"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_conversion to policycenter",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**Conversion to PolicyCenter** is equivalent to **policy transfer** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_applied rate modifiers",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**View discount surcharges** or **discounts** are equivalent to **applied rate modifiers** in PolicyCenter.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "policy.5th-vehicle.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "There is a limitation of 4 vehicles per auto policy. A fifth vehicle policy is written when a customer wants to insure an additional vehicle and already has a 4-vehicle policy in force. \r 1. On the summary screen of the source policy, click the Actions button and select 5th vehicle. \r 2. Complete the 5th vehicle quote using the Create 5th Vehicle Policy job aid as your guide.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_HowtoQuoteaNewCustomerwith5ormoreVehicles_Auto_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_Create5thVehiclePolicy_Auto_R5.pdf"],
+		"descarray": ["Job Aid - How to Quote a New Customer with 5 or More Vehicles - Auto", "Job Aid - Create 5th Vehicle Policy - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.ezlynx.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_SearchforanAccountandPolicy_Common_R5.pdf"],
+		"descarray": ["Job Aid - Search for an Account and Policy"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.status.update",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact your underwriter if you want to change an owner auto policy to a non-owner auto policy.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "underwriting.error.company",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact your underwriter regarding company errors.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.access",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact ITSD for any issues related to policy viewing access.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "work-orders.info",
+	"entity": "work-orders.reply_other",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "Okay, please click below if you&apos;d like to speak to a trainer. Please note, Training Connection hours are Monday-Friday **9:30 a.m. to 7:30 p.m. EST** (excluding holidays).",
+		"link": "https://nationwideacademy.adobeconnect.com/trainingconnection/",
+		"linktag": "Chat with a trainer",
+		"entity_type": "work-orders.reply"
+	}
+}, {
+	"intent": "policy.address.validate",
+	"entity": "policy.address.validate_chat with a trainer",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "Okay, please click below if you&apos;d like to speak to a trainer. Please note, Training Connection hours are Monday-Friday **9:30 a.m. to 7:30 p.m. EST** (excluding holidays).",
+		"link": "https://nationwideacademy.adobeconnect.com/trainingconnection/",
+		"linktag": "Chat with a trainer",
+		"entity_type": "policy.address.validate"
+	}
+}, {
+	"intent": "payment.annual.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "While there is no annual payment option, you can always pay in full, and a full amount can also be the down payment.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.renewal.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To find a list of policy renewals: \r 1. Click the Team tab in PolicyCenter and then click the Renewals link. \r 2. The display defaults to renewals in Open status. You can view bound or renewed policies by clicking the arrow to the right of Status field.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PolicyRenewalProcess(TeamTab)_Common_R5.pdf"],
+		"descarray": ["Job Aid - Policy Renewal Process (Team Tab)"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "work-orders.info",
+	"entity": "work-orders.reply_recently accessed wos",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ViewRecentWorkOrdersandSubmissions_Common_R5.pdf"],
+		"descarray": ["Job Aid - View Recent Work Orders and Submissions"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "work-orders.reply"
+	}
+}, {
+	"intent": "policy.installment-details.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Did you select Easy Pay Discount on the Policy Info screen? If so, the only installment option available will be Recurring EFT - Recurring Electronic Funds Transfer.  You must still select the radio button to the left of the Recurring EFT option. Once that is selected, the Installment Details section will display on the right side of the screen. Click the Enter Installment Details button and complete all fields.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.save",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Quotes are automatically saved in PolicyCenter - you don&apos;t need to do anything to save your quote.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "privacy-statement.missing",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The Privacy Statement is added on the Online Documents tab of the Documents screen. Click the Add button and select **Privacy Statement** from the list.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "claim.delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "Are you quoting a home or auto policy?",
+		"buttons": "Home|Auto",
+		"entity_type": "claim.delete.home-auto"
+	}
+}, {
+	"intent": "term.define",
+	"entity": "term.name_30 day diary in activity",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "**30 day diary** is a follow-up reminder for a new activity.",
+		"entity_type": "term.name"
+	}
+}, {
+	"intent": "NW-employee.discount",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Only current and retired Nationwide employees are eligible to receive the associate discount. Please enter the 6-digit employee ID in the field marked **Associate ID.**",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "smartride.enroll",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here are Job Aid links with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/SmartRide FAQs - Device Program 3-18.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/SmartRide FAQs - Mobile Program 3-18.pdf"],
+		"descarray": ["SmartRide FAQs - Device Program", "SmartRide FAQs - Mobile Program"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "insurability-guidelines.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Insurability Guidelines are found in Reference Connect. There is a link to Reference Connect on Agent Gateway or Agent Center, whichever platform you use.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "discount.home-car.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "On the Policy Info screen, under the Discounts section. Selection of the Property Product adds Home/Car discount, where applicable.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "agent-request-form.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "If you are looking for and Agent of Record form (AoR form), this can be retrieved from the policy transfer team. The phone number is 800-940-7757, option 2, 2, 2.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "MSB.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please click the Retrieve MSB button to bring information from MSB over to the quote in PolicyCenter.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.address.update",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Addresses should be updated at the policy level rather than the account level.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.paperless-discount.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "On the Policy Info screen, in the Discounts section, select Yes to the Paperless Policy question. Select Online Account Access and enter a valid email address in the Nationwide Documents/Email section. Confirm these selections on the Payments screen. Paperless Discount applies to Auto policies only.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.address.validate",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "There are many reasons why an address may need to be validated, so please click below if you would like to speak with a trainer directly to resolve.",
+		"buttons": "Chat with a trainer",
+		"entity_type": "policy.address.validate"
+	}
+}, {
+	"intent": "quote.new",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "To start any quote, first pull up the client in order to access the Account Summary screen. Click the arrow to the right of the Actions field, and then select &#34;New Submission&#34; from the drop-down menu.\r&#160;\r What type of quote would you like to start?",
+		"buttons": "Auto|Property|Umbrella",
+		"entity_type": "quote.type"
+	}
+}, {
+	"intent": "replacement-cost.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Personal Property Replacement Cost is now called **Brand New Belongings**. Refer to the One Product Key Changes document for your state for additional information.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "identify-theft.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Identity Theft coverage is added on the Coverages screen.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "work-orders.info",
+	"entity": "work-orders.reply_completed wos",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReviewChangesonWorkOrder_Common_R5.pdf"],
+		"descarray": ["Job Aid - Review Changes on Work Order"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "work-orders.reply"
+	}
+}, {
+	"intent": "smartride.enroll.R5",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "SmartRide information is added for each eligible and participating vehicle on the Usage-Based Insurance screen.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_HowtoEnterUsage-BasedInsuranceInfo_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - How to Enter Usage – Based Insurance Info"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.internet.pull",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "For ECs only, please utilize the Shared Quote functionality in AGCM. If you are experiencing problems with that functionality, please contact ITSD.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.dwelling-fire.write",
+	"entity": "dwelling-fire.state.2nd_no",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PropertyDwellingFireSubmission-OneProduct_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Property Dwelling Fire Submission – OneProduct"],
+		"entity_type": "dwelling-fire.state.2nd"
+	}
+}, {
+	"intent": "additions-alterations.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Additions and Alterations is located on the Coverages screen in PolicyCenter.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "ITSD.illegal-argument.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact ITSD for any illegal argument exceptions: 888-667-3866.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "claim.delete",
+	"entity": "claim.delete.home-auto_home",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "From the Underwriting tab, select prior losses. Highlight the claim you wish to override and select the override reason. Underwriting will review and approve any overrides after you issue the policy.",
+		"entity_type": "claim.delete.home-auto"
+	}
+}, {
+	"intent": "financial-responsibility.null",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please check each driver on the Drivers screen to make sure the filing required question is answered appropriately.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "cancellation-forms.create",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_HowtoCreateaCancellationForm_Common_R5.pdf"],
+		"descarray": ["Job Aid -  Create a Cancellation Form"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "billing-calculator.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "The Billing Calculator is a centralized service that receives billing and payment information. The calculator allows you to determine installment payments based on changes on the policy. It is only available for unbound/pending work orders &#8211; changes and renewals.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_BillingCalculator_Common_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Billing Calculator"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "event-based-underwriting.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "The Event Based Underwriting process enables Nationwide to more accurately underwrite high-risk segments of new Homeowner and Condominium customers.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_EventBasedUnderwritingPostBind_Property_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Event-Based Underwriting Post-Bind – Property"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.edit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "As long as the quote is not bound, you can simply click the edit button.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_EditSubmission(Work Order)_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Edit Submission (Work Order)"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.effective-date.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "As long as the policy is not bound, you can change the effective date on the Policy Info screen.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "address.third-party.incorrect",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "If the default address is incorrect, you will need to add the third party information with the correct address.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddandDeleteanAdditionalInterest(Third Party)_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Add and Delete an Additional Interest (Third Party) - Auto"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "claims.history",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The prior losses tab in the underwriting page on PolicyCenter will show you any closed claims that are impacting premium on the policy. If you wish to view open claims or claims that are not being merit-rated, you can view those on your legacy systems via client or claim inquiry.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "beginning-of-day.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The beginning-of-day process has not changed and remains the same.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "underwriter.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact your underwriter to unlock your quote.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.dwelling-fire.write",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "Are you writing a policy in Alabama, Indiana, or New York?",
+		"buttons": "Yes|No",
+		"entity_type": "dwelling-fire.state.1st"
+	}
+}, {
+	"intent": "quote.billing.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Changes to billing options can be completed on the Mortgagee/Billing screen, in the Policy/Billing Options section. Don&apos;t forget to update any applicable information on the Payments screen, as well. For example, if the policy is Third Party Billed, you will need to set up Recurring EFT payment information. If the policy is bound, you must start a policy change to complete this action.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.credit-order",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Credit will only be ordered for the Primany Named Insured (PNI) and spouse on Auto policies.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.spinoff",
+	"entity": "policy.spinoff.yes-no_no",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The spinoff policy should be completed in the legacy system.",
+		"entity_type": "policy.spinoff.yes-no"
+	}
+}, {
+	"intent": "policy.spinoff",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "Is the source policy in PolicyCenter?",
+		"buttons": "Yes|No",
+		"entity_type": "policy.spinoff.yes-no"
+	}
+}, {
+	"intent": "policy.dwelling-fire.write",
+	"entity": "dwelling-fire.state.2nd_yes",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PropertyDwellingFireSubmission_Indiana_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Property Dwelling Fire Submission – Indiana"],
+		"entity_type": "dwelling-fire.state.2nd"
+	}
+}, {
+	"intent": "MSB.access",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "If this is a new quote, go to the Dwelling Construction screen, and click the Launch MSB button. Enter and save information in MSB, then return to PolicyCenter. Click the Retrieve from MSB button. If you have already pulled from MSB and need to update, copy the MSB Estimate # from the Coverages screen, and return to the Dwelling Construction screen. Paste the estimate # in the Find existing using estimate number field. Click the Launch MSB button, update the information, save, and click the Retrieve from MSB button.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "expiration-date.lapse",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "On the Underwriting screen, click the Prior Policies tab. Confirm the information returned from the Current Carrier report, update if necessary. You may be to click the Edit button at the top of the work pane to make any updates.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.home.document-find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Documents associated with a Homeowners policy are found on the Documents screen. For example, Declarations and Valuables Plus Schedule documentation can be viewed and printed from the Online Documents tab.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.release",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Please refer to page 5 of the job aid below.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateaBillingAccountforaNewSubmission_Common_R5.pdf"],
+		"descarray": ["Job Aid – Create Billing Account for a New Submission"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.billing.help1",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Ensure all Mortgagee information is added in the Third Party Lienholder section of the Mortgagee/Billing screen. Next, select Third Party Billed in the Policy/Billing Options section of the Mortgagee/Billing screen. Then, you will need to set up Recurring EFT payment information on the Payments screen prior to issuing the policy.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "auto-bridge-nonstandard.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AutoBridgetoNonStandard_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Auto Bridge to NonStandard"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "PLH-report.print",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "PLH reports cannot be printed.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.cancel.re-quote",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact your underwriter regarding policy re-quotes due to payments.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "activity.underwriting",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Refer to the Create an Activity to Underwriting job aid for steps on how to create an activity.  This is different than requesting Underwriting approval on a block bind/issue.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateanActivitytoUnderwriting_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Create an Activity to Underwriting"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.change-version.withdraw",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "A policy change can be withdrawn if it is in &#34;quoted&#34; status. A bound change cannot be withdrawn.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_WithdrawSubmission_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Withdraw Submission"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "producer-participant.update",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Refer to the Update Producer Participant job aid for steps on changing the producer on a policy.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UpdateProducerParticipant_Common_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Update Producer Participant"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.add-driver-assignment",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Driver Assignment is not required in all states, if your state requires driver assignment, refer to the Add Driver Assignment job aid for more information.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddDriverAssignment_Auto_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Add Driver Assignment - Auto"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "activity-detail.view-notes",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "From the Desktop screen, click the appropriate activity link. Click the View Notes button on the Activity Detail pane.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.accident-override",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Accidents and/or Violations can only be overriden on Auto quotes or policy changes to add a new driver. Once a policy has been bound (issued), no one can override the accident or violation.  rr Refer to the Accident Violation Override job aid for steps to override an accident or violation.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AccidentViolationOverride_Auto_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Accident Override Violation - Auto"],
+		"entity_type": "NA"
+	}
+}]

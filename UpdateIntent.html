@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Updating Response Based on Intent and Entity</title>
+		<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script language="JavaScript" type="text/javascript" src="app.js"></script>
+		<script language='JavaScript' type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+			function actionselection() {
+				var selectedValue = document.getElementById("selectResponse").value;
+				var answertag = document.getElementById('answertag');
+				if(selectedValue=="MultimediaResponse"){
+						document.getElementById('linkarray').style.visibility='visible';
+						document.getElementById('linkarray1').style.visibility='visible';
+						document.getElementById('iconarray').style.visibility='visible';
+						document.getElementById('iconarray1').style.visibility='visible';			
+						answertag.value = 'answer,linkarray,iconarray,entity_type';
+					}else{
+						if(selectedValue=="PromptsButtons"){
+							answertag.value = 'answer,buttons,entity_type';
+						}
+						if(selectedValue=="Hyperlink"){
+							answertag.value = 'answer,link,linktag,entity_type';
+						}
+						if(selectedValue=="Text"){
+							answertag.value = 'answerarray,entity_types';
+						}
+						document.getElementById('linkarray').style.visibility='hidden';
+						document.getElementById('linkarray1').style.visibility='hidden';
+						document.getElementById('iconarray').style.visibility='hidden';
+						document.getElementById('iconarray1').style.visibility='hidden';
+					}
+			    }
+				/*function myFunction(){
+					
+				 alert("Hello! I am an alert box! ");
+				} */
+		</script>
+	</head>
+	<style>
+		div.ex {
+			text-align: right width:300px;
+			padding: 10px;
+			border: 5px solid grey;
+			width: 400px;
+			margin: 0px
+		}
+	</style>
+	<body bgcolor="#E6E6FA">
+		<h1 style="color:#F08080;">Updating Response Based on Intent and Entity</h1>
+		</div>
+		<div class="ex">
+			<form action="/UpdateIntent" method="get" id="UpdateIntent">
+				<table style="with: 50%">
+					<tr>
+						<tr>
+							<td>Intent</td>
+							<td><select type="text" name="intent" id="getIntent" style="width:250px">
+								<option selected="selected">Focus to fetch the Intent</option>
+							</select></td>
+						</tr>
+					</tr>
+					<tr>
+						<td>Entity</td>
+						<td>
+							<select type="text" name="entity" id="getEntity" style="width:250px"></select>
+						</td>
+					</tr>
+					<tr>
+						<td>Select ResponseTag</td>
+						<td><input type="text" name="selectResponse" id="selectResponse" style="width:250px" /></td>
+					</tr>
+					<tr>
+						<td>Answer Tag</td>
+						<td><input id="answertag" type="text" name="answertag" style="width:250px"/></td>
+					</tr>
+					<tr>
+						<td>Answer</td>
+						<td>
+							<input id="answer" type="text" name="answer" style="width:250px"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Entity Type</td>
+						<td>
+							<input id="entitytype" type="textarea" name="entitytype" style="width:250px"/>
+						</td>
+					</tr>
+					<tr>
+						<td><label id="linkarray1" for="linkarray1" style="visibility:hidden">Link Array</label></td>
+						<td><input id="linkarray" type="textarea" name="linkarray" style="visibility:hidden" /></td>
+					</tr>
+					<tr>
+						<td><label id="descarray1" for="descarray1" style="visibility:hidden">Desc Array</label></td>
+						<td><input id="descarray" type="textarea" name="descarray" style="visibility:hidden"/></td>
+				</tr>
+					<tr>
+						<td>
+							<label id="iconarray1" for="iconarray1" style="visibility:hidden">Icon Array</label>
+						</td>
+						<td>
+							<input id="iconarray" type="textarea" name="iconarray" style="visibility:hidden" />
+						</td>
+					</tr>
+				</table>
+				<button style="background-color:#53760D;color:#D0F18F" id="updateChart">Update Intent</button>
+				<!--<input type="submit" value="Add New Intent" style="background-color:#53760D;color:#D0F18F"/>--></form>
+		</div>
+	</body>
+
+</html>

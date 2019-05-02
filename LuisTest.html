@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Intent Data</title>
+<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+<script language="JavaScript" type="text/javascript" src="app.js"></script>
+<script language='JavaScript' type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    function actionselection() {
+	var selectedValue = document.getElementById("selectResponse").value;
+	var answertag = document.getElementById('answertag');
+	if(selectedValue=="MultimediaResponse"){
+			document.getElementById('linkarray').style.visibility='visible';
+			document.getElementById('linkarray1').style.visibility='visible';
+			document.getElementById('iconarray').style.visibility='visible';
+			document.getElementById('iconarray1').style.visibility='visible';			
+			document.getElementById('descarray').style.visibility='visible';
+			document.getElementById('descarray1').style.visibility='visible';			
+			answertag.value = 'answer,linkarray,iconarray,entity_type,descarray';
+		}else{
+			if(selectedValue=="PromptsButtons"){
+				answertag.value = 'answer,buttons,entity_type';
+				document.getElementById('linkarray').style.visibility='hidden';
+				document.getElementById('linkarray1').style.visibility='hidden';
+				document.getElementById('iconarray').style.visibility='hidden';
+				document.getElementById('iconarray1').style.visibility='hidden';
+				document.getElementById('descarray').style.visibility='hidden';
+				document.getElementById('descarray1').style.visibility='hidden';
+			}
+			if(selectedValue=="Hyperlink"){
+				answertag.value = 'answer,link,linktag,entity_type';
+				document.getElementById('linkarray').style.visibility='visible';
+				document.getElementById('linkarray1').style.visibility='visible';
+				document.getElementById('descarray').style.visibility='visible';
+				document.getElementById('descarray1').style.visibility='visible';
+				document.getElementById('iconarray').style.visibility='hidden';
+				document.getElementById('iconarray1').style.visibility='hidden';
+			}
+			if(selectedValue=="Text"){
+				answertag.value = 'answer,entity_types';
+				document.getElementById('linkarray').style.visibility='hidden';
+				document.getElementById('linkarray1').style.visibility='hidden';
+				document.getElementById('iconarray').style.visibility='hidden';
+				document.getElementById('iconarray1').style.visibility='hidden';
+				document.getElementById('descarray').style.visibility='hidden';
+				document.getElementById('descarray1').style.visibility='hidden';
+			}
+			
+		}
+    }
+</script>
+<script type='javascript/text' src='azure-storage.common.js'/>
+<script type='javascript/text' src='azure-storage.blob.js'/>
+<script type='text/javascript'>	
+</script>
+</head>
+<style>
+div.ex {
+	text-align: right width:300px;
+	padding: 10px;
+	border: 5px solid grey;
+	width: 400px;
+	margin: 0px
+}
+</style>
+<body bgcolor="#E6E6FA">
+	<!-- jQuery -->
+    <script src="./js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+	<h1 style="color:#F08080;">Adding New Intent and Entity</h1>
+	<div class="ex">
+		<form action="/NewIntent" method="get" id="NewIntent" >
+			<table style="with: 50%">
+				<tr>
+					<td>Intent</td>
+					<td><input id="intent" type="text" name="intent" /></td>
+				</tr>
+				<tr>
+					<td>Entity</td>
+					<td><input id="entity" type="text" name="entity" /></td>
+				</tr>
+				<tr>
+					<td>Select Response Tag</td>
+					<td>
+						<select id="selectResponse" name="selectResponse" onChange="actionselection();">
+						  <option value="--Select--">Select</option>
+						  <option value="MultimediaResponse">Multimedia Response</option>
+						  <option value="PromptsButtons">Button Response</option>
+						  <option value="Hyperlink">Hyperlink</option>
+						  <option value="Text">Text Response</option>						  
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Answer Tag</td>
+					<td><input id="answertag" type="text" name="answertag" /></td>
+				</tr>
+				<tr>
+					<td>Answer</td>
+					<td><input id="answer" type="text" name="answer" /></td>
+				</tr>
+				<tr>
+					<td>Entity Type</td>
+					<td><input id="entitytype" type="textarea" name="entitytype" /></td>
+				</tr>
+				<tr>
+					<td><label id="linkarray1" for="linkarray1" style="visibility:hidden">Link Array</label></td>
+					<td><input id="linkarray" type="textarea" name="linkarray" style="visibility:hidden"/></td>
+				</tr>
+				<tr>
+					<td><label id="descarray1" for="descarray1" style="visibility:hidden">Desc Array</label></td>
+					<td><input id="descarray" type="textarea" name="descarray" style="visibility:hidden"/></td>
+				</tr>
+				<tr>
+					<td><label id="iconarray1" for="iconarray1" style="visibility:hidden">Icon Array</label></td>
+					<td><input id="iconarray" type="textarea" name="iconarray" style="visibility:hidden"/></td>
+				</tr>
+				<tr>
+					<!--<form action="fileupload" method="post" enctype="multipart/form-data">-->
+					<td><label id="fileupload1" for="fileupload1">Upload file</label></td>
+					<td><input type="file" name="uploadExcel" id="uploadExcel"></td>
+					<td><input type="submit" id="uploadexc" enctype="multipart/form-data"></td>
+					<!--</form>-->
+				</tr>				
+			</table>
+			<div>
+				<button style="background-color:#53760D;color:#D0F18F" id="readDataFromDB">Add New Intent</button>
+				<label class="smallLabel" id="readDataFromDBLabel">Status:</label>
+			</div>
+			<!--<button style="background-color:#53760D;color:#D0F18F">Add New Intent</button>
+			<input type="submit" value="Add New Intent"  style="background-color:#53760D;color:#D0F18F"/>-->
+		</form>
+	</div>
+</body>
+</html>

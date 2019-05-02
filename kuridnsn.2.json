@@ -1,0 +1,1001 @@
+[{
+	"intent": "policy.prior-inception.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The prior policy inception date is located on the Underwriting screen under the Prior Policies tab.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "driver-exclusion-form.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "When required, the Driver Exclusion form can be found on the Documents screen in PolicyCenter. Click the View button to the left of the document to view and print.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "water-backup.coverage.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "There is only one Water Backup coverage now. Refer to the One Product Reference Guide for your state for more information. ",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "submission.withdraw",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Unbound submissions/quotes can be withdrawn in PolicyCenter. Note, once a submission is withdrawn, it cannot be reopened.rr Refer to the Withdraw a Submission (Quote) job aid for steps to withdraw an unbound submission or quote.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_WithdrawSubmission_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Withdraw Submission"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "valuables-plus.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The Valuables Plus (Inland Marine) product provides brad coverage for customers that require additional protection beyond the base homeowner policy for personal property types, such as jewelry, furs, etc. Valuables Plus endorsements are available on Homeowner, Tenant, and Condo policies. For more information about Valuables Plus (Inland Marine), including Valuables Plus (Inland Marine) Transfers, refer to the One Product Reference Guide for your state.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.dwelling-fire.write",
+	"entity": "dwelling-fire.state.1st_no",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "You may write the dwelling fire in your current system",
+		"entity_type": "dwelling-fire.state.1st"
+	}
+}, {
+	"intent": "policy.home.sq-ft.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Square Footage information is pulled from MSB. If this is a new quote, go to the Dwelling Construction screen, and click the Launch MSB button. Enter and save information in MSB, then return to PolicyCenter. Click the Retrieve from MSB button. If you have already pulled from MSB and need to update, copy the MSB Estimate # from the Coverages screen, and return to the Dwelling Construction screen. Paste the estimate # in the Find existing using estimate number field. Click the Launch MSB button, update the information, save, and click the Retrieve from MSB button.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.new",
+	"entity": "quote.type_property",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "Here is some information on how to start a property quote.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/Property Learning Snack - Full Submission.mp4", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreatePropertyFullApplicationPolicy_R5.pdf"],
+		"descarray": ["Job Aid - Property Learning Snack - Full Submission", "Job Aid - Create Property Full Application Policy"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_video.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "quote.type"
+	}
+}, {
+	"intent": "policy.dwelling-fire.write",
+	"entity": "dwelling-fire.state.1st_yes",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "Are you writing for Indiana?",
+		"buttons": "Yes|No",
+		"entity_type": "dwelling-fire.state.2nd"
+	}
+}, {
+	"intent": "policy.spinoff",
+	"entity": "policy.spinoff.yes-no_yes",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateSpinOffPolicy_Auto_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Create Spin-Off Policy – Auto"],
+		"entity_type": "policy.spinoff.yes-no"
+	}
+}, {
+	"intent": "remitted-amount.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Refer to the Create a Billing Account for a New Submission job. The section named u201CCreate a New Billing Account to Bill a Third Party Mortgageu201D that starts on page 5 walks through the steps needed for this task.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateaBillingAccountforaNewSubmission_Common_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Create a Billing Account for a New Submission"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "reinstatement.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Agents do not have the ability to reinstate policies. Please contact your service center.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.change.reverse",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "A change can not be deleted or reversed; however, you can create a second change and counterbalance the first change. For example, if a driver was removed in the first change, add the driver back in the second change. ",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.third-named-insured.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "It is not possible to have three named insureds on a policy. You can add one (1) secondary named insured, and then the third person as an Additional Named insured.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddorDeleteSecondaryNamedInsured_Auto_Property_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_AddorDeleteAdditionalNamedInsured(Trusts)_Property_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Add or Delete Secondary Named Insured - Auto/Property", "Job Aid - Add or Delete Additional Named Insured (Trusts) - Property/Umbrella"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "document.reprint",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To print/reprint documents, click the Documents link in the left navigation pane. On the Online Documents tab, click the View button for the appropriate document, then print the document as normal. From the Print Customer Documents tab, click the View/Print button for the appropriate document, then print as normal. From the Resend Print tab,  select the check box to the left of the appropriate document(s) and click the Resend button. Note: using this feature mails a copy of the document directly to the customer.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.new",
+	"entity": "quote.type_umbrella",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "Here is some information on how to start an Umbrella quote.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonPolicyCenter_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid - Umbrella Full Application - Underlying Policies on PolicyCenter Umbrella"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "quote.type"
+	}
+}, {
+	"intent": "policy.auto.coverages.copy",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Yes, the Copy Coverages function in PolicyCenter allows you to copy coverages from one vehicle to another on the SAME policy.   rr Refer to the Copy Vehicle &#8211; Level Coverages job aid for step-by-step instructions.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CopyVehicle-LevelCoverages_Auto_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Copy Vehicle-Level Coverages - Auto"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "permissive-use.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please refer to your underwriter for questions regarding learneru2019s permit drivers and permissive use drivers.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "claim.delete",
+	"entity": "claim.delete.home-auto_auto",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Highlight the claim in question on the Accidents/Violations tab, then select &apos;Yes&apos; on the override field and select a reason from the drop down. You will then get a message that underwriting will have to approve the override, which you must do prior to submitting.",
+		"entity_type": "claim.delete.home-auto"
+	}
+}, {
+	"intent": "quote.print.error",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The quote can only be printed when the new business submission is in Quoted status. The Print Quote button is on the Quote Screen.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "activity.processing",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Refer to the Create an Activity to Processing job aid for steps on how to create an activity.",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_CreateanActivitytoProcessing_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Create an Activity to Processing"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "prior-approval.submit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_RequestUnderwriterApproval _R5.pdf"],
+		"descarray": ["Job Aid - Request Underwriter Approval"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.address.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_ChangeMailingAddress_Common_R5.pdf"],
+		"descarray": ["Job Aid – Change Mailing Address"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "online-account.create",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_CreateanOnlineAccountonNationwide.com_R5.pdf"],
+		"descarray": ["Job Aid Create an Online Account on Nationwide.com"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "document.sign",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To begin eSignature, click View Documents, then check the box agreeing to use of electronic record and signatures. Click Start, navigate through the pages, and then click or draw a signature before clicking Finish.  \r\r Here is a link to more information about the eSignature process:",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_eSignatureProcessforSigners_R5.pdf"],
+		"descarray": ["e-Signature Process for Signers"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.address-change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_AddorChangeGaragingAddress_Auto_R5.pdf"],
+		"descarray": ["Job Aid - Add or Change Garaging Address - Auto"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.recreational.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_AddaRecreationalVehicletoanUmbrellaPolicy_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid - Add a Recreational Vehicle to an Umbrella Policy"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.driver.exclude-umbrella",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_ExcludeaDriveronanUmbrellaPolicy_Umbrella_R5.pdf"],
+		"descarray": ["Job Aid Exclude a Driver on an Umbrella Policy Umbrella"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "privacy-statement.missing",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The Privacy Statement is added on the Online Documents tab of the Documents screen. Click the Add button and select **Privacy Statement** from the list.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "In PolicyCenter, there are three options for entering underlying policies. Which would you like to learn more about?",
+		"buttons": "Create Policy|Retrieve Account Policies|Retrieve Additional Policies",
+		"entity_type": "policy.umbrella.add.option"
+	}
+}, {
+	"intent": "policy.renewal.edit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To edit policy renewals \r 1. Only unbound renewals can be edited. If the renewal has been bound, a policy change is required. \r 2. To edit an unbound renewal, go to the Summary screen of the policy. \r 3. From Work Orders in Progress section, select the Renewal Work Order number. \r 4. Click the Edit button at the top of the screen area, read the pop-up message and click the OK button, and on the Policy Info screen, click the Coverages link in the left navigation pane.\r 5. Make all edits, click Quote, click the Policy Review link in the left navigation pane, review changes, and click the Renew button. Click OK on the pop-up screen.",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_PolicyRenewalProcess(TeamTab)_Common_R5.pdf"],
+		"descarray": ["Policy Renewal Process (Team Tab)"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.add",
+	"entity": "policy.umbrella.add.option_create policy",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "The Create Policy button is used when you need to add an AgentCenter policy, such as a Nationwide affiliated company (Allied, or Harleysville), a Nationwide-Hagerty, a Powersports, or a Private Client underlier to the submission.",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonAgentCenter_Umbrella_R5.pdf", "https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid – Umbrella Full Application – Underlying Policies on AgentCenter – Umbrella", "Job Aid – Add an Underlier – Umbrella"],
+		"entity_type": "policy.umbrella.add.option"
+	}
+}, {
+	"intent": "policy.status",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_PolicyStatus_Common_R5.pdf"],
+		"descarray": ["Job Aid Policy Status Common"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "mortgagee.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,entity_type",
+		"answer": "To change a mortgagee, on the Policy Info screen, click the Mortgagee/Additional Interest link. You can select and edit existing mortgagees or add new ones by clicking Add under the right section. Populate fields and click OK. Or, you can select the existing mortgagee and click on Remove to delete it.",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_AddMortagee(Third Party)_Property_R5.pdf"],
+		"descarray": ["Add Mortagee (Third Party)"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.underwriting.approval.request",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_RequestUnderwriterApproval _R5.pdf"],
+		"descarray": ["Job Access Request Underwriter Approval"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.status.update",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact your underwriter if you want to change an owner auto policy to a non-owner auto policy.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.property.tenant.submit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_PropertyTenantSubmission_Property_R5.pdf"],
+		"descarray": ["Job Aid - Property Tenant Submission"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "financial-responsibility.null",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please check each driver on the Drivers screen to make sure the filing required question is answered appropriately.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "notes.access-search-edit-delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_AccessSearchEditandDeleteNotes_Common_R5.pdf"],
+		"descarray": ["Job Access Search Edit and Delete Notes Common"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.underwriting.prequote-issue.clear",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_ClearUnderwritingPreQuoteIssue_R5.pdf"],
+		"descarray": ["Job Access Clear Underwriting PreQuote Issue"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.coverage.earthquake.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help: ",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_AddEarthquakeCoverage_Property_R5.pdf"],
+		"descarray": ["Job Aid - Add Earthquake Coverage"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.add",
+	"entity": "policy.umbrella.add.option_retrieve additional policies",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "The Retrieve Additional Policies button is used when the underliers are not listed in the PolicyCenter account, but are Nationwide (AGSS) policies.",
+		"linkarray": ["https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_UmbrellaFullApplication-UnderlyingPoliciesonAGSS_Umbrella_R5.pdf", "https://agentactivationchatbotpr.blob.core.windows.net/faqstorage/JobAid_AddanUnderlier_Umbrella_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotpr.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid – Umbrella Full Application – Underlying Policies on AGSS – Umbrella", "Job Aid – Add an Underlier – Umbrella"],
+		"entity_type": "policy.umbrella.add.option"
+	}
+}, {
+	"intent": "social-security.error",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Social security numbers are not required, but if you are receiving an error, please check the format of your entry to make sure that it&apos;s correct.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.non-state.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "It&apos;s possible that your state is not yet in PolicyCenter. Please confirm that PolicyCenter is available in your state.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "fortified-home.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "A premium credit for homes meeting IBHS Fortified Home standard. The home must be inspected by a Fortified Evaluator and then certified by the IBHS who determine the designation level and issue a certificate. Certificates are valid for 5 years. The insured must provide a copy of the designation certificate. Not available to policies that excluded Wind Hail coverage and is mutually exclusive with the Wind Mitigation rating variable and Better Roof Replacement.",
+		"link": "https://disastersafety.org/fortified/fortified-home/",
+		"linktag": "MORE INFO",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "payment.down-payment.multi-source",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here are Job Aid links with instructions to help",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_MultiSourceDownPayments_Common_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Multi-Source Payments"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.home.tractor.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Tractors are no longer added under Property policies. Please contact your underwriter for additional assistance.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "customer-service.elevate",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact PLSC at +1 877 669 6877 to resolve your issue.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "ITSD.setup.associate",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact ITSD for any associate setup questions: +1 888 667 3866.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.agent-center.access",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Hyperlink",
+		"answertags": "answer,link,linktag,entity_type",
+		"answer": "Here is a link to the Agent Center quoting system. ",
+		"link": "https://agentcenter.nationwide.com/WorkspaceAC/login",
+		"linktag": "OPEN",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.billing.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "For billing information on bound policies, Exclusive Agents should use BAM directly, and Independent Agents should use AgentCenter.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.discount.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please enter all relevant information about your customer to see what discounts are available. Please refer to your state&apos;s One Product reference guide for discounts available with each product.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.home.mobile-home",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Mobile homes are not eligible for quoting.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "producer.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here are Job Aid links with instructions to help",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_UpdateProducerParticipant_Common_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Update Producer Participant"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To find a quote, go to the Search tab, change the &#34;Search For&#34; field to Submission, enter the primary insured&apos;s info, and then click Search.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "self.question",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Okay, I&apos;ll try to help you. What is your question?",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.holder.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here are Job Aid links with instructions to help",
+		"linkarray": ["https://agentactivationbotsn.blob.core.windows.net/faqstorage/JobAid_SearchforanAccountandPolicy_Common_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Search for an Account and Policy"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.violation.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact your underwriter regarding any auto violations, such as speeding.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.in-force.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "You can review the gray info bar on the policy. The current status will be listed there.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "claim.move",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "All claims returned from the CLUE report are listed under the primary named insured on the Driver&apos;s Screen. It is not necessary to move the claim to another driver.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "brand-new-belongings.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Brand New Belongings is added on the Coverages screen under the Section 1 Coverages.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.system.old-new",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Ensure the effective date of your quote is past the PolicyCenter new business effective date for your state. If you are looking to for a quote prior to the PolicyCenter new business effective date for your state, return to your legacy system to complete your quote.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.home.defaults",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Unfortunately, at this time, defaults can only be set for auto submissions.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.billing.submit",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To submit payment(s) on bound policies, Exclusive Agents should use BAM directly, and Independent Agents should use AgentCenter.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.billing.manage",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To manage billing, Exclusive Agents should use BAM directly, and Independent Agents should use AgentCenter.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "account.delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Accounts cannot be deleted.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "activities.e-mail.notification",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "At this time, PolicyCenter does not support email notifications for Activities; however, it is on the list for a future enhancement.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.defensive-driving.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Defensive Driver, and other Driver Training, classes are acknowledged on the Drivers screen on the Auto policy. Select the Driver Training option under the Discounts section. Note: selection of this discount will require the policyholder to provide documentation of proof of completion",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "time.internet-browser.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "If you are experiencing errors with time input fields, you may be using a non-supported browser. Here is a Job Aid link with instructions to help.",
+		"linkarray": ["https://agentactivationbotsn.blob.core.windows.net/faqstorage/JobAid_RecommendedInternetBrowserforPolicyCenter_Common_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Recommended Internet Browser"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.SR22.print",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "SR22s cannot be printed. They are only mailed to the insured and to the DMV.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "ITSD.system-outage.contact",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact ITSD regarding any system outage notices: +1 888 667 3866.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.vehicle.max",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Up to four (4) vehicles can be added to each Auto policy. If needed, a &#34;5th&#34; vehicle policy can be created with up to four (4) additional vehicles.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.camper.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Campers must be insured on a Recreational Vehicle policy, which are still handled on your legacy system.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.territory.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Territory should be returned from the GIS system. What has returned from GIS can be viewed on the Dwelling screen in the Geographic Data section.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.auto.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To start a policy change, navigate to the in force policy. Click the **Actions** button in the left navigation pane. Select **Change Policy** from the drop-down menu. Complete the change, quote, and issue the policy.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.billing.combine",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To accomplish this, you will need to add all of the policies to an existing Billing account. Refer to page 5 of the Create a Billing Account for a New Submission  job aid for the process to add a policy to an existing billing account.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "cancellation.delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "A cancellation can only be rescinded if the cancellation date is in the future. If a policy was cancelled effective immediately, please contact the PLSC at +1 877 669 6877 for help reinstating the policy.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.bound-change.withdraw",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Policy change cannot be deleted once bound. You will need to make a second change to counterbalance the changes made previously. If you need assistance with this process, please call PLSC at +1 877 669 6877.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.proof-of-insurance.find",
+	"entity": "policy.poof-of-insurance.auto-property_auto",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here's a Job Aid link with instructions to help:",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_PrintInsuranceIDCardatmynationwide.com_Auto_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid Print Insurance ID Card at my nationwide.com Auto"],
+		"entity_type": "policy.poof-of-insurance.auto-property"
+	}
+}, {
+	"intent": "policy.proof-of-insurance.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "Are you trying to get proof of insurance for an auto or property policy?",
+		"buttons": "Auto|Property",
+		"entity_type": "policy.poof-of-insurance.auto-property"
+	}
+}, {
+	"intent": "document.delivery-preference",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Document Delivery Preference is selected on the Policy Info screen, under the **Nationwide Documents/Emails** section.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.nationwide-customer",
+	"entity": "NA",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "Which system are you trying to quote in?",
+		"buttons": "Legacy|PolicyCenter",
+		"entity_type": "quote.nationwide-customer.system"
+	}
+}, {
+	"intent": "policy.proof-of-insurance.find",
+	"entity": "policy.poof-of-insurance.auto-property_property",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "The Memorandum of Insurance is found on the Online Documents tab, on the Documents screen and is updated in real time.  In some cases you may need to click the **Add** button and select the memorandum of Insurance from that list.",
+		"entity_type": "policy.poof-of-insurance.auto-property"
+	}
+}, {
+	"intent": "policy.affinity.remove",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "The pre-selected affinity affiliation is typically the policyholders best benefit, however, you can review other options. Refer to the **Add Affinity Relationship** job aid for step-by-step instructions.",
+		"linkarray": ["https://agentactivationbotsn.blob.core.windows.net/faqstorage/JobAid_AddAffinityRelationship_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Add Affinity Relationship"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "EFT.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "If the agent selected the Easy Pay Discount in the Policy Info tab then the only option in the payment screen is EFT.  The &#34;Easy Pay&#34; Discount will need to be removed in the Policy Info tab for the Payment tab to offer additional payment options.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.nationwide-customer",
+	"entity": "quote.nationwide-customer.system_legacy",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "To start any quote, first pull up the client in order to access the Account Summary screen. Click the arrow to the right of the Actions field, and then select &#34;New Submission&#34; from the drop-down menu.\r&#160;\r What type of quote would you like to start?",
+		"buttons": "Auto|Property|Umbrella",
+		"entity_type": "quote.nationwide-customer.system"
+	}
+}, {
+	"intent": "quote.farm-bureau.discount.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Farm Bureau voting members will automatically be identified during the quoting process and cannot be added or removed manually. The One Product reference guides can provide more information about your state&apos;s Farm Bureau discount.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.new-same",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "To begin a new quote on the same member account, return to the Account for the member. (Click the Account # link in the info bar, at the top of the policy.) Once on the Account File Summary screen, click the Actions button at the top of the left navigation pane. Select &#34;New Submission&#34; from the list. Select the appropriate product and proceed through the quote.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "supplemental-heat.change",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Information needs to match what is in MSB. If you have already pulled from MSB and need to update, copy the MSB Estimate # from the Coverages screen, and return to the Dwelling Construction screen. Paste the estimate # in the Find existing using estimate number field. Click the Launch MSB button, update the information, save, and click the Retrieve from MSB button.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.credit-rerun",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here are Job Aid links with instructions to help",
+		"linkarray": ["https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Auto_R5.pdf", "https://agentactivationchatbotsn.blob.core.windows.net/faqstorage/JobAid_ReportOrdering_Property_R5.pdf"],
+		"iconarray": ["https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationchatbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - Report Ordering - Auto", "Job Aid - Report Ordering - Property"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "additional-dwelling.rented.delete",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Start a change on the Property policy. Navigate to the Coverages screen, deselect the Additional Residence Rented to Others coverage listed in the Section II Coverages section. If you have more than one property listed in this section, and only want to remove one property, select the check box next to the property to be removed, and click the Remove button.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.mail.agency",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "You may replace the policy mailing address with your agency address.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "quote.nationwide-customer",
+	"entity": "quote.nationwide-customer.system_policycenter",
+	"response": {
+		"responsetag": "PromptsButtons",
+		"answertags": "answer,buttons,entity_type",
+		"answer": "To begin a new quote on the same member account, return to the Account for the member. (Click the Account # link in the info bar, at the top of the policy.) Once on the Account File Summary screen, click the Actions button at the top of the left navigation pane. Select &#34;New Submission&#34; from the list. Select the appropriate product and proceed through the quote.",
+		"buttons": "Auto|Property|Umbrella",
+		"entity_type": "quote.nationwide-customer.system"
+	}
+}, {
+	"intent": "premium-change.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Please contact PLSC regarding premium changes: +1 877 669 6877.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.nth-vehicle.add",
+	"entity": "NA",
+	"response": {
+		"responsetag": "MultimediaResponse",
+		"answertags": "answer,linkarray,iconarray,descarray,entity_type",
+		"answer": "Here are Job Aid links with instructions to help",
+		"linkarray": ["https://agentactivationbotsn.blob.core.windows.net/faqstorage/JobAid_HowtoQuoteaNewCustomerwith5ormoreVehicles_Auto_R5.pdf", "https://agentactivationbotsn.blob.core.windows.net/faqstorage/JobAid_Create5thVehiclePolicy_Auto_R5.pdf"],
+		"iconarray": ["https://agentactivationbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png", "https://agentactivationbotsn.blob.core.windows.net/aabotstorage/icon_pdf.png"],
+		"descarray": ["Job Aid - How to Quote a New Customer with 5 or More Vehicles", "Job Aid - Create a 5th Vehicle Policy"],
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "roadside-assistance.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Roadside Assistance is added on Coverages screen. For more information about what is covered under Roadside Assistance, please reference your state&apos;s One Product guide.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "water-backup.find",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "Water backup coverage is added on the Coverages screen under the Section 1 Coverages.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "household-members-screen.info",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "There are several required fields on the Household Members screen that must be answered before you can move forward (or back) in the system. Double check to make sure all required questions are answered, including the &#34;Any liability losses greater than $50,000 in the last three years&#34; question that must be answered for each household member.",
+		"entity_type": "NA"
+	}
+}, {
+	"intent": "policy.umbrella.bind-error",
+	"entity": "NA",
+	"response": {
+		"responsetag": "Text",
+		"answertags": "answer,entity_type",
+		"answer": "An Umbrella policy cannot be bound until all underlying policies are also bound. Return to the auto policy and bind/issue, then return to the umbrella policy to bind.",
+		"entity_type": "NA"
+	}
+}]

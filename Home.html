@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Agent Activation Chatbot Maintenance Tool</title>
+    
+        <!-- Global stylesheets -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/custom.css" rel="stylesheet" type="text/css">
+        <!-- /global stylesheets -->
+    
+        <!-- Core JS files -->
+        <script language='JavaScript' type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="javascripts/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+		<script>
+			function getIntentList()
+			{
+                 if(localStorage.length!="0"){
+                    localStorage.clear();
+                }
+				var formData = {};
+			    $.ajax({
+			      type: "GET",
+			      url: "http://agentmaintenancetool.azurewebsites.net/selectDataIntent",
+			      data: formData,
+			      dataType: 'json',
+			      contentType: 'application/json',
+			      success: function (res) {
+					var list_Objects = jQuery.unique(res.data.sort(function(a,b){return a.toLowerCase().localeCompare(b.toLowerCase());}));          
+					//alert("List: " + list_Objects);
+					var listHTML = '<table id="myTable" border="0">';
+        				$.each(list_Objects, function (key, value) {
+                           var aIntent=value;  
+                           if(value!=""){
+                                if (value =='None')
+                                   {
+                                       value = 'fallback.default';
+                                   }
+          					  listHTML += '<tr><td><a href="EditPolicy.html?intent='+aIntent+'" onclick="EditPolicy.html?intent='+aIntent+'" class="text-black"> <button type="button" class="btn btn-default bg-white btn-width mb-10 border-blue d-block"><span class="glyphicon glyphicon-pencil pr-10"></span>'+ value +'</button></a></td></tr>';
+                            }
+    			         });
+					listHTML += "</table>";
+					//alert("List HTML: " + listHTML);
+					document.getElementById('intentList').innerHTML= listHTML;
+			      },
+			      error: function () {
+			        document.getElementById('intentList').innerHTML= "Unable to fetch Intent List. Please refresh the page to try again. ";
+			      }
+			    });
+			};	
+			
+		</script>
+        <script>
+          function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            } 
+          }
+        }
+    
+    </script>
+	</head>
+
+<body class="bg-white">
+    <!-- Main navbar -->
+    <div class="navbar bg-blue">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="" height="80" width="80"></a>
+        <div class="navbar-header">   
+            <h3 class="logo-container">Agent Activation Chatbot Maintenance Tool </h3>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+        <ul class="nav navbar-nav navbar-right">
+            <li class="logo-container" style="padding-right:60px">ENVIRONMENT: DEV</li> 
+         </ul>
+         <ul class="nav navbar-nav navbar-right">
+            <li class="logo-container" ><a href="http://agentmaintenancetoolsandbox3.azurewebsites.net/index.html" style="text-decoration: none; border-bottom: 1px solid red;" target="_blank">DEMO</a></li>
+         </ul>
+         <ul class="nav navbar-nav navbar-right">
+            <li class="logo-container"><a href="http://agentmaintenancetoolprod.azurewebsites.net/index.html" style="text-decoration: none; border-bottom: 1px solid red;" target="_blank">PROD</a></li>
+         </ul>
+        </div>
+    </div>
+    <!-- Main navbar -->
+    <!-- container -->
+        <div class="btn-link text-center" style="padding-top:60px">
+        <a href="https://agentactivationchatbotsnd2.azurewebsites.net/?username=DemoTest&userid=0000" style="text-decoration: none; border-bottom: 1px solid blue;" target="_blank">Launch Agent Activation ChatBot</a>
+        <br><br>
+        <a href="https://www.luis.ai/applications/89fbf75f-14e2-4cf4-8faa-f541eb22de1f/versions/0.1/build/intents" style="text-decoration: none; border-bottom: 1px solid blue;" target="_blank">Launch LUIS</a>
+        </div>
+			
+    <div class="container align-content text-center">           
+            <div class="form-group text-center">
+                    <input type="text" id="myInput" onkeyup="myFunction()" class="form-control btn-width-lg border-blue d-block noXbutton" placeholder="Search for Intents">
+                  </div>       
+		     <!--<button type="button"  class="btn btn-default bg-white btn-width mb-10 border-blue d-block" onclick="getDataFromDb()">
+            <span class="glyphicon glyphicon-plus pr-10"></span>Add New Intent
+        </button>-->
+        <a href="AddIntent.html" class="text-black">
+        <button type="button"  class="btn btn-default bg-white btn-width mb-10 border-blue d-block">
+            <span class="glyphicon glyphicon-plus pr-10"></span>Add New Intent
+        </button></a>
+        <div class="popup" id="intentList" style="font-size:20px;" align="center">Loading... </div>
+        <script>getIntentList();</script>      
+
+        <a href="AddIntent.html" class="text-black">
+        <button type="button"  class="btn btn-default bg-white btn-width mb-10 border-blue d-block">
+            <span class="glyphicon glyphicon-plus pr-10"></span>Add New Intent
+        </button></a>
+    </div>
+     <!-- container -->
+</body>
+</html>
