@@ -35,7 +35,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "requestretry": "^4.0.0",
-    "socket.io": "~0.9.13"
+    "socket.io": "~2.4.0"
   },
   "noAnalyze": true,
   "license": "Apache",
